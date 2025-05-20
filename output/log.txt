@@ -1,0 +1,46 @@
+1: SOCK_C? (R7)
+2:  NORMAL_STATE.\r\n (R16)
+3: UUID:554A692C:09343135:39303237, MAC:00:80:e1:04:33:2e\r\n LFRM IP   : 10.185.97.179\r\n C2C Sub  : 255.255.255.192\r\n C2C GW   : (R124)
+4:  10.185.97.190\r\n\r\nBuild at May 12 2025  16:56:23\r\n*SOCK_CLOSED..........104/..\..\W5500\secstcp.c
+(R98)
+6: Socket Connect..........39/..\..\W5500\secstcp.c
+SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 01 00 00 03 04 
+[DEBUG]--> Select request-->Send to EAP, L471SECS Received len:16, 60/..\..\W5500\secstcp.c
+00 00 00 0C 00 01 81 0D 00 00 00 00 03 06 01 00 
+(R280)
+12:  NORMAL_STATE.\r\n (R16)
+13: UUID:554A692C:09343135:39303237, MAC:00:80:e1:04:33:2e\r\n LFRM IP   : 10.185.97.179\r\n C2C Sub  : 255.255.255.192\r\n C2C GW   : 10.185.97.190\r\n\r\nBuild at May 12 2025  16:56:23\r\n*SOCK_CLOSED (R186)
+14: ..........104/..\..\W5500\secstcp.c
+(R36)
+16:  NORMAL_STATE.\r\n (R16)
+17: UUID:554A692C:09343135:39303237, MAC:00:80:e1:04:33:2e\r\n LFRM IP   : 10.185.97.179\r\n C2C Sub  : 255.255.255.192\r\n C2C GW   : (R124)
+18:  10.185.97.190\r\n\r\nBuild at May 12 2025  16:56:23\r\n*SOCK_CLOSED..........104/..\..\W5500\secstcp.c
+(R98)
+20: Socket Connect..........39/..\..\W5500\secstcp.c
+SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 01 00 00 00 04 
+[DEBUG]--> Select request-->Send to EAP, L471SECS Received len:16, 60/..\..\W5500\secstcp.c
+00 00 00 0C 00 01 81 0D 00 00 00 00 00 06 01 00 
+(R280)
+26: SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 09 00 00 00 08 
+SOCK_CLOSED..........104/..\..\W5500\secstcp.c
+(R137)
+30: Socket Connect..........39/..\..\W5500\secstcp.c
+SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 01 00 00 00 04 
+[DEBUG]--> Select request-->Send to EAP, L471SECS Received len:16, 60/..\..\W5500\secstcp.c
+00 00 00 0C 00 01 81 0D 00 00 00 00 00 06 01 00 
+(R280)
+36: SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 09 00 00 00 08 
+SOCK_CLOSED..........104/..\..\W55 (R124)
+39: 00\secstcp.c
+(R13)
+41: Socket Connect..........39/..\..\W5500\secstcp.c
+SECS Received len:14, 60/..\..\W5500\secstcp.c
+00 00 00 0A FF FF 00 00 00 01 00 00 00 04 
+[DEBUG]--> Select request-->Send to EAP, L471SECS Received len:16, 60/..\..\W5500\secstcp.c
+00 00 00 0C 00 01 81 0D 00 00 00 00 00 06 01 00 
+(R280)

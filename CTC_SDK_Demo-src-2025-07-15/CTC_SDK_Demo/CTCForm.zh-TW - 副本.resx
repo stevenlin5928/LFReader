@@ -1,0 +1,3046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;comboBox_UART_Baudrate.Name" xml:space="preserve">
+    <value>comboBox_UART_Baudrate</value>
+  </data>
+  <data name="&gt;&gt;comboBox_UART_Baudrate.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;comboBox_UART_Baudrate.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBox_UART_Baudrate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ip.Name" xml:space="preserve">
+    <value>comboBox_ip</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ip.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ip.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBox_ip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_scan.Name" xml:space="preserve">
+    <value>button_scan</value>
+  </data>
+  <data name="&gt;&gt;button_scan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_scan.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;button_scan.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ipRb.Name" xml:space="preserve">
+    <value>ipRb</value>
+  </data>
+  <data name="&gt;&gt;ipRb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ipRb.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;ipRb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;serialRb.Name" xml:space="preserve">
+    <value>serialRb</value>
+  </data>
+  <data name="&gt;&gt;serialRb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serialRb.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;serialRb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;connectBtn.Name" xml:space="preserve">
+    <value>connectBtn</value>
+  </data>
+  <data name="&gt;&gt;connectBtn.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;connectBtn.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;connectBtn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;serialCb.Name" xml:space="preserve">
+    <value>serialCb</value>
+  </data>
+  <data name="&gt;&gt;serialCb.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;serialCb.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;serialCb.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;disconnectBtn.Name" xml:space="preserve">
+    <value>disconnectBtn</value>
+  </data>
+  <data name="&gt;&gt;disconnectBtn.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;disconnectBtn.Parent" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;disconnectBtn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="topPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="topPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 63</value>
+  </data>
+  <data name="topPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 41</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="topPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Name" xml:space="preserve">
+    <value>topPanel</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;topPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;topPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items" xml:space="preserve">
+    <value>4800</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items1" xml:space="preserve">
+    <value>9600</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items2" xml:space="preserve">
+    <value>14400</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items3" xml:space="preserve">
+    <value>19200</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items4" xml:space="preserve">
+    <value>38400</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items5" xml:space="preserve">
+    <value>57600</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items6" xml:space="preserve">
+    <value>115200</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items7" xml:space="preserve">
+    <value>128000</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items8" xml:space="preserve">
+    <value>230400</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Items9" xml:space="preserve">
+    <value>460800</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 8</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 28</value>
+  </data>
+  <data name="comboBox_UART_Baudrate.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="comboBox_ip.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="comboBox_ip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 8</value>
+  </data>
+  <data name="comboBox_ip.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="comboBox_ip.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="comboBox_ip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="comboBox_ip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 28</value>
+  </data>
+  <data name="comboBox_ip.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="button_scan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAYhJREFUOE+Vkr1LA0EQxaNREDQoNsZWSCMIioViaS1YCBb2Ka00hTZnk1yS+4rl
+        oX/BgSfYaJVOSCuKqeJHUAQV7Gzjb7jRoLkc+OBxs2/ezN7uTuobhmGMVavVLXgK7yuVygdsENuO48x1
+        Op0BtfYCwyTmQ/hCwQUsEhf4HvFtwmvLsjaDIEhrSRe+7w9rwZsUeZ43oamUFNi2vUD+hFy7XC4va6oL
+        khvwEW5zjEGVf4FcFtZpEsKMyhEQzuA53cdVioVshO8B34pKERDbJEu67At8OXwtmFcpAgm57YIu+4LC
+        LD650B2VIiA04DHnH1IpFrzCEk3keddUioBgkbjlthdV6oE0x1MSn2maMypHkCGhyRUMa7XalMo/kJdh
+        91XyT9CMnQUZEro/wzqU2865rjutv22wvoOf0EEb1bIuZBcZEgwhBTITLeKmxjfE+/CA+BUWY5sIMGXk
+        nTHl4S5clzPLBnCE3B7ae2KTJPxtQpw4fLGQJnIkGlzCeZX/BzkqR5gNgiD9BbiYA3g2Zt/8AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="button_scan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 8</value>
+  </data>
+  <data name="button_scan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="button_scan.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="ipRb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ipRb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 11</value>
+  </data>
+  <data name="ipRb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="ipRb.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="ipRb.Text" xml:space="preserve">
+    <value>IP地址</value>
+  </data>
+  <data name="serialRb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="serialRb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 10</value>
+  </data>
+  <data name="serialRb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="serialRb.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="serialRb.Text" xml:space="preserve">
+    <value>串口</value>
+  </data>
+  <data name="connectBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="connectBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 8</value>
+  </data>
+  <data name="connectBtn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="connectBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="connectBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="connectBtn.Text" xml:space="preserve">
+    <value>連接</value>
+  </data>
+  <data name="serialCb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="serialCb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 8</value>
+  </data>
+  <data name="serialCb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="serialCb.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="serialCb.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="serialCb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 28</value>
+  </data>
+  <data name="serialCb.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="disconnectBtn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="disconnectBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="disconnectBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>649, 8</value>
+  </data>
+  <data name="disconnectBtn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="disconnectBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 28</value>
+  </data>
+  <data name="disconnectBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="disconnectBtn.Text" xml:space="preserve">
+    <value>斷開</value>
+  </data>
+  <data name="uicommandListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uicommandListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 6</value>
+  </data>
+  <data name="uicommandListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uicommandListBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uicommandListBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="uicommandListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 606</value>
+  </data>
+  <data name="uicommandListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="uicommandListBox.Text" xml:space="preserve">
+    <value>uiListBox1</value>
+  </data>
+  <data name="&gt;&gt;uicommandListBox.Name" xml:space="preserve">
+    <value>uicommandListBox</value>
+  </data>
+  <data name="&gt;&gt;uicommandListBox.Type" xml:space="preserve">
+    <value>Sunny.UI.UIListBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uicommandListBox.Parent" xml:space="preserve">
+    <value>rightPanel</value>
+  </data>
+  <data name="&gt;&gt;uicommandListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LF.Name" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LF.Parent" xml:space="preserve">
+    <value>uiTabControl_RF</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage_OLED.Name" xml:space="preserve">
+    <value>tabPage_OLED</value>
+  </data>
+  <data name="&gt;&gt;tabPage_OLED.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_OLED.Parent" xml:space="preserve">
+    <value>uiTabControl_RF</value>
+  </data>
+  <data name="&gt;&gt;tabPage_OLED.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LED.Name" xml:space="preserve">
+    <value>tabPage_LED</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LED.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LED.Parent" xml:space="preserve">
+    <value>uiTabControl_RF</value>
+  </data>
+  <data name="&gt;&gt;tabPage_LED.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiTabControl_RF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt, style=Bold</value>
+  </data>
+  <data name="uiTabControl_RF.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="uiTabControl_RF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="uiTabControl_RF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 677</value>
+  </data>
+  <data name="uiTabControl_RF.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl_RF.Name" xml:space="preserve">
+    <value>uiTabControl_RF</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl_RF.Type" xml:space="preserve">
+    <value>Sunny.UI.UITabControl, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl_RF.Parent" xml:space="preserve">
+    <value>rightPanel</value>
+  </data>
+  <data name="&gt;&gt;uiTabControl_RF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bottomPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="bottomPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_looptime.Name" xml:space="preserve">
+    <value>textBox_looptime</value>
+  </data>
+  <data name="&gt;&gt;textBox_looptime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_looptime.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;textBox_looptime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_repeatSend.Name" xml:space="preserve">
+    <value>checkBox_repeatSend</value>
+  </data>
+  <data name="&gt;&gt;checkBox_repeatSend.Type" xml:space="preserve">
+    <value>Sunny.UI.UICheckBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;checkBox_repeatSend.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;checkBox_repeatSend.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;sendBtn.Name" xml:space="preserve">
+    <value>sendBtn</value>
+  </data>
+  <data name="&gt;&gt;sendBtn.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;sendBtn.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;sendBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;commandTb.Name" xml:space="preserve">
+    <value>commandTb</value>
+  </data>
+  <data name="&gt;&gt;commandTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;commandTb.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;commandTb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bottomPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 614</value>
+  </data>
+  <data name="bottomPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 68</value>
+  </data>
+  <data name="bottomPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Name" xml:space="preserve">
+    <value>bottomPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
+    <value>rightPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rightPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rightPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 0</value>
+  </data>
+  <data name="rightPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>782, 682</value>
+  </data>
+  <data name="rightPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rightPanel.Name" xml:space="preserve">
+    <value>rightPanel</value>
+  </data>
+  <data name="&gt;&gt;rightPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rightPanel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;rightPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiProcessBar_checkAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiProcessBar_checkAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 149</value>
+  </data>
+  <data name="uiProcessBar_checkAll.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 3</value>
+  </data>
+  <data name="uiProcessBar_checkAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 29</value>
+  </data>
+  <data name="uiProcessBar_checkAll.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="uiProcessBar_checkAll.Text" xml:space="preserve">
+    <value>uiProcessBar1</value>
+  </data>
+  <data name="&gt;&gt;uiProcessBar_checkAll.Name" xml:space="preserve">
+    <value>uiProcessBar_checkAll</value>
+  </data>
+  <data name="&gt;&gt;uiProcessBar_checkAll.Type" xml:space="preserve">
+    <value>Sunny.UI.UIProcessBar, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiProcessBar_checkAll.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;uiProcessBar_checkAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiButton_CheckAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiButton_CheckAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 143</value>
+  </data>
+  <data name="uiButton_CheckAll.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton_CheckAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 35</value>
+  </data>
+  <data name="uiButton_CheckAll.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="uiButton_CheckAll.Text" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="&gt;&gt;uiButton_CheckAll.Name" xml:space="preserve">
+    <value>uiButton_CheckAll</value>
+  </data>
+  <data name="&gt;&gt;uiButton_CheckAll.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton_CheckAll.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;uiButton_CheckAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiDataGridView_IRDevList.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="Line_No_.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Line_No_.HeaderText" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="Line_No_.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="Addr_.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Addr_.HeaderText" xml:space="preserve">
+    <value>Addr</value>
+  </data>
+  <data name="IR_Value_.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IR_Value_.HeaderText" xml:space="preserve">
+    <value>IR Value</value>
+  </data>
+  <data name="PageData_.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PageData_.HeaderText" xml:space="preserve">
+    <value>PageData</value>
+  </data>
+  <data name="PageData_.Width" type="System.Int32, mscorlib">
+    <value>230</value>
+  </data>
+  <data name="PageNum_.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PageNum_.HeaderText" xml:space="preserve">
+    <value>PageNum</value>
+  </data>
+  <data name="uiDataGridView_IRDevList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiDataGridView_IRDevList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 181</value>
+  </data>
+  <data name="uiDataGridView_IRDevList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 500</value>
+  </data>
+  <data name="uiDataGridView_IRDevList.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiDataGridView_IRDevList.Name" xml:space="preserve">
+    <value>uiDataGridView_IRDevList</value>
+  </data>
+  <data name="&gt;&gt;uiDataGridView_IRDevList.Type" xml:space="preserve">
+    <value>Sunny.UI.UIDataGridView, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiDataGridView_IRDevList.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;uiDataGridView_IRDevList.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Name" xml:space="preserve">
+    <value>uiLabel4</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Name" xml:space="preserve">
+    <value>uiLabel3</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Name" xml:space="preserve">
+    <value>uiLabel2</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_setthresholdrate.Name" xml:space="preserve">
+    <value>button_setthresholdrate</value>
+  </data>
+  <data name="&gt;&gt;button_setthresholdrate.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_setthresholdrate.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_setthresholdrate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button_getthresholdrate.Name" xml:space="preserve">
+    <value>button_getthresholdrate</value>
+  </data>
+  <data name="&gt;&gt;button_getthresholdrate.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_getthresholdrate.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_getthresholdrate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdFloor.Name" xml:space="preserve">
+    <value>textBox_thresholdFloor</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdFloor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdFloor.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdFloor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdCeiling.Name" xml:space="preserve">
+    <value>textBox_thresholdCeiling</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdCeiling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdCeiling.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;textBox_thresholdCeiling.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_watchdog.Name" xml:space="preserve">
+    <value>button_watchdog</value>
+  </data>
+  <data name="&gt;&gt;button_watchdog.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_watchdog.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_watchdog.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_IRCALRESTORE.Name" xml:space="preserve">
+    <value>button_IRCALRESTORE</value>
+  </data>
+  <data name="&gt;&gt;button_IRCALRESTORE.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_IRCALRESTORE.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_IRCALRESTORE.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button_fwVersion.Name" xml:space="preserve">
+    <value>button_fwVersion</value>
+  </data>
+  <data name="&gt;&gt;button_fwVersion.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_fwVersion.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_fwVersion.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBox_calval.Name" xml:space="preserve">
+    <value>textBox_calval</value>
+  </data>
+  <data name="&gt;&gt;textBox_calval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_calval.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;textBox_calval.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;button_IRCAL.Name" xml:space="preserve">
+    <value>button_IRCAL</value>
+  </data>
+  <data name="&gt;&gt;button_IRCAL.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_IRCAL.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_IRCAL.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_setirAdjustDistance.Name" xml:space="preserve">
+    <value>btn_setirAdjustDistance</value>
+  </data>
+  <data name="&gt;&gt;btn_setirAdjustDistance.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btn_setirAdjustDistance.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;btn_setirAdjustDistance.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBox_irarg.Name" xml:space="preserve">
+    <value>textBox_irarg</value>
+  </data>
+  <data name="&gt;&gt;textBox_irarg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_irarg.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;textBox_irarg.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_getirArg.Name" xml:space="preserve">
+    <value>btn_getirArg</value>
+  </data>
+  <data name="&gt;&gt;btn_getirArg.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btn_getirArg.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;btn_getirArg.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;button_IR_value.Name" xml:space="preserve">
+    <value>button_IR_value</value>
+  </data>
+  <data name="&gt;&gt;button_IR_value.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_IR_value.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_IR_value.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_reboot.Name" xml:space="preserve">
+    <value>btn_reboot</value>
+  </data>
+  <data name="&gt;&gt;btn_reboot.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;btn_reboot.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;btn_reboot.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_device.Name" xml:space="preserve">
+    <value>comboBox_device</value>
+  </data>
+  <data name="&gt;&gt;comboBox_device.Type" xml:space="preserve">
+    <value>Sunny.UI.UIComboBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;comboBox_device.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;comboBox_device.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;button_getCANIRDevice.Name" xml:space="preserve">
+    <value>button_getCANIRDevice</value>
+  </data>
+  <data name="&gt;&gt;button_getCANIRDevice.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_getCANIRDevice.Parent" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;button_getCANIRDevice.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="basicGb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="basicGb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="basicGb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="basicGb.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="basicGb.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="basicGb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 135</value>
+  </data>
+  <data name="basicGb.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="basicGb.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;basicGb.Name" xml:space="preserve">
+    <value>basicGb</value>
+  </data>
+  <data name="&gt;&gt;basicGb.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;basicGb.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;basicGb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox_broadcast.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_broadcast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 154</value>
+  </data>
+  <data name="checkBox_broadcast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 24</value>
+  </data>
+  <data name="checkBox_broadcast.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="checkBox_broadcast.Text" xml:space="preserve">
+    <value>广播</value>
+  </data>
+  <data name="checkBox_broadcast.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;checkBox_broadcast.Name" xml:space="preserve">
+    <value>checkBox_broadcast</value>
+  </data>
+  <data name="&gt;&gt;checkBox_broadcast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_broadcast.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;checkBox_broadcast.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="leftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="leftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="leftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 682</value>
+  </data>
+  <data name="leftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Name" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainPanel.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 104</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 686</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button_writeLF.Name" xml:space="preserve">
+    <value>button_writeLF</value>
+  </data>
+  <data name="&gt;&gt;button_writeLF.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;button_writeLF.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;button_writeLF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox_testLF.Name" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;groupBox_testLF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_testLF.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;groupBox_testLF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiButton_readLF.Name" xml:space="preserve">
+    <value>uiButton_readLF</value>
+  </data>
+  <data name="&gt;&gt;uiButton_readLF.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton_readLF.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;uiButton_readLF.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox1.Name" xml:space="preserve">
+    <value>uiCheckBox1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox1.Type" xml:space="preserve">
+    <value>Sunny.UI.UICheckBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox1.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_rwData.Name" xml:space="preserve">
+    <value>uiTextBox_rwData</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_rwData.Type" xml:space="preserve">
+    <value>Sunny.UI.UITextBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_rwData.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_rwData.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_page.Name" xml:space="preserve">
+    <value>uiTextBox_page</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_page.Type" xml:space="preserve">
+    <value>Sunny.UI.UITextBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_page.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_page.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Name" xml:space="preserve">
+    <value>uiLabel1</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Type" xml:space="preserve">
+    <value>Sunny.UI.UILabel, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.Parent" xml:space="preserve">
+    <value>tabPage_LF</value>
+  </data>
+  <data name="&gt;&gt;uiLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabPage_LF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage_LF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 637</value>
+  </data>
+  <data name="tabPage_LF.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_LF.Text" xml:space="preserve">
+    <value>LF</value>
+  </data>
+  <data name="button_writeLF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_writeLF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 146</value>
+  </data>
+  <data name="button_writeLF.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_writeLF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="button_writeLF.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="button_writeLF.Text" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="button_writeLF.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_readtimes.Name" xml:space="preserve">
+    <value>textBox_readtimes</value>
+  </data>
+  <data name="&gt;&gt;textBox_readtimes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_readtimes.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;textBox_readtimes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox_enLFtest.Name" xml:space="preserve">
+    <value>checkBox_enLFtest</value>
+  </data>
+  <data name="&gt;&gt;checkBox_enLFtest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_enLFtest.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;checkBox_enLFtest.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_IntervalTime.Name" xml:space="preserve">
+    <value>textBox_IntervalTime</value>
+  </data>
+  <data name="&gt;&gt;textBox_IntervalTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IntervalTime.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;textBox_IntervalTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_readLFSuccessRate.Name" xml:space="preserve">
+    <value>label_readLFSuccessRate</value>
+  </data>
+  <data name="&gt;&gt;label_readLFSuccessRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_readLFSuccessRate.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label_readLFSuccessRate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_readcountFlag.Name" xml:space="preserve">
+    <value>label_readcountFlag</value>
+  </data>
+  <data name="&gt;&gt;label_readcountFlag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_readcountFlag.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label_readcountFlag.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_readLFFailCount.Name" xml:space="preserve">
+    <value>label_readLFFailCount</value>
+  </data>
+  <data name="&gt;&gt;label_readLFFailCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_readLFFailCount.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label_readLFFailCount.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_readLFcount.Name" xml:space="preserve">
+    <value>label_readLFcount</value>
+  </data>
+  <data name="&gt;&gt;label_readLFcount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_readLFcount.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label_readLFcount.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>groupBox_testLF</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="groupBox_testLF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 203</value>
+  </data>
+  <data name="groupBox_testLF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 237</value>
+  </data>
+  <data name="groupBox_testLF.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="groupBox_testLF.Text" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="groupBox_testLF.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 32</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>次数</value>
+  </data>
+  <data name="textBox_readtimes.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_readtimes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 26</value>
+  </data>
+  <data name="textBox_readtimes.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBox_readtimes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 29</value>
+  </data>
+  <data name="textBox_readtimes.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="textBox_readtimes.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="checkBox_enLFtest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_enLFtest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 28</value>
+  </data>
+  <data name="checkBox_enLFtest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 26</value>
+  </data>
+  <data name="checkBox_enLFtest.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="checkBox_enLFtest.Text" xml:space="preserve">
+    <value>repeat</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 191</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 22</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 191</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 22</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>間隔時間:</value>
+  </data>
+  <data name="textBox_IntervalTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 184</value>
+  </data>
+  <data name="textBox_IntervalTime.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBox_IntervalTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 29</value>
+  </data>
+  <data name="textBox_IntervalTime.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="textBox_IntervalTime.Text" xml:space="preserve">
+    <value>1000</value>
+  </data>
+  <data name="label_readLFSuccessRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_readLFSuccessRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label_readLFSuccessRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 153</value>
+  </data>
+  <data name="label_readLFSuccessRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 19</value>
+  </data>
+  <data name="label_readLFSuccessRate.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="label_readLFSuccessRate.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 150</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 22</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>成功率:</value>
+  </data>
+  <data name="label_readcountFlag.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_readcountFlag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 81</value>
+  </data>
+  <data name="label_readcountFlag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 22</value>
+  </data>
+  <data name="label_readcountFlag.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="label_readcountFlag.Text" xml:space="preserve">
+    <value>已讀取次數:</value>
+  </data>
+  <data name="label_readLFFailCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_readLFFailCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label_readLFFailCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 114</value>
+  </data>
+  <data name="label_readLFFailCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 19</value>
+  </data>
+  <data name="label_readLFFailCount.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label_readLFFailCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_readLFcount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_readLFcount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 14.25pt, style=Bold</value>
+  </data>
+  <data name="label_readLFcount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 81</value>
+  </data>
+  <data name="label_readLFcount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 19</value>
+  </data>
+  <data name="label_readLFcount.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_readLFcount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 111</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 22</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>失敗次數:</value>
+  </data>
+  <data name="uiButton_readLF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiButton_readLF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 146</value>
+  </data>
+  <data name="uiButton_readLF.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton_readLF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="uiButton_readLF.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="uiButton_readLF.Text" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="uiCheckBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="uiCheckBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 92</value>
+  </data>
+  <data name="uiCheckBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 29</value>
+  </data>
+  <data name="uiCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="uiCheckBox1.Text" xml:space="preserve">
+    <value>HEX</value>
+  </data>
+  <data name="uiTextBox_rwData.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt</value>
+  </data>
+  <data name="uiTextBox_rwData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 92</value>
+  </data>
+  <data name="uiTextBox_rwData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox_rwData.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox_rwData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="uiTextBox_rwData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 29</value>
+  </data>
+  <data name="uiTextBox_rwData.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="uiTextBox_rwData.Text" xml:space="preserve">
+    <value>00 00 00 00 00 00 00 00 </value>
+  </data>
+  <data name="uiTextBox_page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiTextBox_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 43</value>
+  </data>
+  <data name="uiTextBox_page.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox_page.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox_page.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="uiTextBox_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 29</value>
+  </data>
+  <data name="uiTextBox_page.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uiTextBox_page.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="uiLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 41</value>
+  </data>
+  <data name="uiLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 23</value>
+  </data>
+  <data name="uiLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uiLabel1.Text" xml:space="preserve">
+    <value>page:</value>
+  </data>
+  <data name="uiLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Name" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.Parent" xml:space="preserve">
+    <value>tabPage_OLED</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_OLED.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage_OLED.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 60</value>
+  </data>
+  <data name="tabPage_OLED.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage_OLED.Text" xml:space="preserve">
+    <value>OLED</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line3.Name" xml:space="preserve">
+    <value>uiCheckBox_Line3</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line3.Type" xml:space="preserve">
+    <value>Sunny.UI.UICheckBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line3.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line2.Name" xml:space="preserve">
+    <value>uiCheckBox_Line2</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line2.Type" xml:space="preserve">
+    <value>Sunny.UI.UICheckBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line2.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line1.Name" xml:space="preserve">
+    <value>uiCheckBox_Line1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line1.Type" xml:space="preserve">
+    <value>Sunny.UI.UICheckBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line1.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiCheckBox_Line1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;uiButton_clearOledScreen.Name" xml:space="preserve">
+    <value>uiButton_clearOledScreen</value>
+  </data>
+  <data name="&gt;&gt;uiButton_clearOledScreen.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton_clearOledScreen.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiButton_clearOledScreen.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;uiButton_OledShow.Name" xml:space="preserve">
+    <value>uiButton_OledShow</value>
+  </data>
+  <data name="&gt;&gt;uiButton_OledShow.Type" xml:space="preserve">
+    <value>Sunny.UI.UIButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiButton_OledShow.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiButton_OledShow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine3.Name" xml:space="preserve">
+    <value>uiTextBox_OledLine3</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine3.Type" xml:space="preserve">
+    <value>Sunny.UI.UITextBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine3.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine2.Name" xml:space="preserve">
+    <value>uiTextBox_OledLine2</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine2.Type" xml:space="preserve">
+    <value>Sunny.UI.UITextBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine2.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine1.Name" xml:space="preserve">
+    <value>uiTextBox_OledLine1</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine1.Type" xml:space="preserve">
+    <value>Sunny.UI.UITextBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine1.Parent" xml:space="preserve">
+    <value>uiGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;uiTextBox_OledLine1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="uiGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="uiGroupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 627</value>
+  </data>
+  <data name="uiGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uiGroupBox1.Text" xml:space="preserve">
+    <value>Line Display</value>
+  </data>
+  <data name="uiCheckBox_Line3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiCheckBox_Line3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 187</value>
+  </data>
+  <data name="uiCheckBox_Line3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiCheckBox_Line3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 29</value>
+  </data>
+  <data name="uiCheckBox_Line3.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="uiCheckBox_Line3.Text" xml:space="preserve">
+    <value>Line 3</value>
+  </data>
+  <data name="uiCheckBox_Line2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiCheckBox_Line2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 110</value>
+  </data>
+  <data name="uiCheckBox_Line2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiCheckBox_Line2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 29</value>
+  </data>
+  <data name="uiCheckBox_Line2.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="uiCheckBox_Line2.Text" xml:space="preserve">
+    <value>Line 2</value>
+  </data>
+  <data name="uiCheckBox_Line1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiCheckBox_Line1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 36</value>
+  </data>
+  <data name="uiCheckBox_Line1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiCheckBox_Line1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 29</value>
+  </data>
+  <data name="uiCheckBox_Line1.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="uiCheckBox_Line1.Text" xml:space="preserve">
+    <value>Line 1</value>
+  </data>
+  <data name="uiButton_clearOledScreen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uiButton_clearOledScreen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 281</value>
+  </data>
+  <data name="uiButton_clearOledScreen.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton_clearOledScreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 35</value>
+  </data>
+  <data name="uiButton_clearOledScreen.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="uiButton_clearOledScreen.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="uiButton_OledShow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uiButton_OledShow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 281</value>
+  </data>
+  <data name="uiButton_OledShow.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiButton_OledShow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 35</value>
+  </data>
+  <data name="uiButton_OledShow.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="uiButton_OledShow.Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 216</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 29</value>
+  </data>
+  <data name="uiTextBox_OledLine3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="uiTextBox_OledLine3.Text" xml:space="preserve">
+    <value>C3BU_12FOP0026</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 139</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 29</value>
+  </data>
+  <data name="uiTextBox_OledLine2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="uiTextBox_OledLine2.Text" xml:space="preserve">
+    <value>WFR INSPECION 5 FOR WLCSP</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 14.25pt</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 65</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 16</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 29</value>
+  </data>
+  <data name="uiTextBox_OledLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="uiTextBox_OledLine1.Text" xml:space="preserve">
+    <value>ABP08P1828931.01.01</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Name" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.Parent" xml:space="preserve">
+    <value>tabPage_LED</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Name" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Type" xml:space="preserve">
+    <value>Sunny.UI.UIGroupBox, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.Parent" xml:space="preserve">
+    <value>tabPage_LED</value>
+  </data>
+  <data name="&gt;&gt;uiGroupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>tabPage_LED</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage_LED.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="tabPage_LED.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 60</value>
+  </data>
+  <data name="tabPage_LED.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage_LED.Text" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDFlash.Name" xml:space="preserve">
+    <value>uiRadioButton_GreenLEDFlash</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDFlash.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDFlash.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDFlash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOff.Name" xml:space="preserve">
+    <value>uiRadioButton_GreenLEDOff</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOff.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOff.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOff.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOn.Name" xml:space="preserve">
+    <value>uiRadioButton_GreenLEDOn</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOn.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOn.Parent" xml:space="preserve">
+    <value>uiGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_GreenLEDOn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiGroupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 128</value>
+  </data>
+  <data name="uiGroupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 78</value>
+  </data>
+  <data name="uiGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uiGroupBox3.Text" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 35</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDFlash.Text" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 35</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOff.Text" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 35</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uiRadioButton_GreenLEDOn.Text" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDFlash.Name" xml:space="preserve">
+    <value>uiRadioButton_RedLEDFlash</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDFlash.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDFlash.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDFlash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOff.Name" xml:space="preserve">
+    <value>uiRadioButton_RedLEDOff</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOff.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOff.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOff.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOn.Name" xml:space="preserve">
+    <value>uiRadioButton_RedLEDOn</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOn.Type" xml:space="preserve">
+    <value>Sunny.UI.UIRadioButton, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOn.Parent" xml:space="preserve">
+    <value>uiGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;uiRadioButton_RedLEDOn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="uiGroupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 40</value>
+  </data>
+  <data name="uiGroupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="uiGroupBox2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiGroupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="uiGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 78</value>
+  </data>
+  <data name="uiGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uiGroupBox2.Text" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 31</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="uiRadioButton_RedLEDFlash.Text" xml:space="preserve">
+    <value>Flash</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 31</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 29</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOff.Text" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 31</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 29</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uiRadioButton_RedLEDOn.Text" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="&gt;&gt;button_led.Name" xml:space="preserve">
+    <value>button_led</value>
+  </data>
+  <data name="&gt;&gt;button_led.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_led.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;button_led.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_2HzFlash.Name" xml:space="preserve">
+    <value>radioButton_LED_2HzFlash</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_2HzFlash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_2HzFlash.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_2HzFlash.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_1HzFlash.Name" xml:space="preserve">
+    <value>radioButton_LED_1HzFlash</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_1HzFlash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_1HzFlash.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_1HzFlash.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_dot5Flash.Name" xml:space="preserve">
+    <value>radioButton_LED_dot5Flash</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_dot5Flash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_dot5Flash.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_dot5Flash.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_on.Name" xml:space="preserve">
+    <value>radioButton_LED_on</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_on.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_on.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_on.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_off.Name" xml:space="preserve">
+    <value>radioButton_LED_off</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_off.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_off.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_LED_off.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 237</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 75</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>LED</value>
+  </data>
+  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_led.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 19</value>
+  </data>
+  <data name="button_led.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 37</value>
+  </data>
+  <data name="button_led.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button_led.Text" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="radioButton_LED_2HzFlash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_LED_2HzFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 18</value>
+  </data>
+  <data name="radioButton_LED_2HzFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 26</value>
+  </data>
+  <data name="radioButton_LED_2HzFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radioButton_LED_2HzFlash.Text" xml:space="preserve">
+    <value>2Hz</value>
+  </data>
+  <data name="radioButton_LED_1HzFlash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_LED_1HzFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 18</value>
+  </data>
+  <data name="radioButton_LED_1HzFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 26</value>
+  </data>
+  <data name="radioButton_LED_1HzFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioButton_LED_1HzFlash.Text" xml:space="preserve">
+    <value>1Hz</value>
+  </data>
+  <data name="radioButton_LED_dot5Flash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_LED_dot5Flash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 18</value>
+  </data>
+  <data name="radioButton_LED_dot5Flash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 26</value>
+  </data>
+  <data name="radioButton_LED_dot5Flash.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButton_LED_dot5Flash.Text" xml:space="preserve">
+    <value>0.5Hz</value>
+  </data>
+  <data name="radioButton_LED_on.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_LED_on.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 18</value>
+  </data>
+  <data name="radioButton_LED_on.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 26</value>
+  </data>
+  <data name="radioButton_LED_on.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButton_LED_on.Text" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="radioButton_LED_off.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButton_LED_off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 19</value>
+  </data>
+  <data name="radioButton_LED_off.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 26</value>
+  </data>
+  <data name="radioButton_LED_off.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButton_LED_off.Text" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 37</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>秒/次</value>
+  </data>
+  <data name="textBox_looptime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 34</value>
+  </data>
+  <data name="textBox_looptime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 26</value>
+  </data>
+  <data name="textBox_looptime.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="textBox_looptime.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="checkBox_repeatSend.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="checkBox_repeatSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 34</value>
+  </data>
+  <data name="checkBox_repeatSend.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="checkBox_repeatSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="checkBox_repeatSend.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="checkBox_repeatSend.Text" xml:space="preserve">
+    <value>定時發送</value>
+  </data>
+  <data name="sendBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="sendBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 34</value>
+  </data>
+  <data name="sendBtn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="sendBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 27</value>
+  </data>
+  <data name="sendBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="sendBtn.Text" xml:space="preserve">
+    <value>發送</value>
+  </data>
+  <data name="commandTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 1</value>
+  </data>
+  <data name="commandTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 26</value>
+  </data>
+  <data name="commandTb.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="commandTb.Text" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 7</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>自定義命令(Hex):</value>
+  </data>
+  <data name="uiLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uiLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 93</value>
+  </data>
+  <data name="uiLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 36</value>
+  </data>
+  <data name="uiLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="uiLabel4.Text" xml:space="preserve">
+    <value>IR閥值上下界:</value>
+  </data>
+  <data name="uiLabel4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="uiLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uiLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 57</value>
+  </data>
+  <data name="uiLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 36</value>
+  </data>
+  <data name="uiLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="uiLabel3.Text" xml:space="preserve">
+    <value>IR閥值(1-100):</value>
+  </data>
+  <data name="uiLabel3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="uiLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="uiLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 27</value>
+  </data>
+  <data name="uiLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 27</value>
+  </data>
+  <data name="uiLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="uiLabel2.Text" xml:space="preserve">
+    <value>IR 校準值:</value>
+  </data>
+  <data name="uiLabel2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button_setthresholdrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_setthresholdrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 101</value>
+  </data>
+  <data name="button_setthresholdrate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_setthresholdrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 28</value>
+  </data>
+  <data name="button_setthresholdrate.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="button_setthresholdrate.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="button_getthresholdrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_getthresholdrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 99</value>
+  </data>
+  <data name="button_getthresholdrate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_getthresholdrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 27</value>
+  </data>
+  <data name="button_getthresholdrate.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="button_getthresholdrate.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="textBox_thresholdFloor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 98</value>
+  </data>
+  <data name="textBox_thresholdFloor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 26</value>
+  </data>
+  <data name="textBox_thresholdFloor.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="textBox_thresholdCeiling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 98</value>
+  </data>
+  <data name="textBox_thresholdCeiling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 26</value>
+  </data>
+  <data name="textBox_thresholdCeiling.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 148</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="button_watchdog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_watchdog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 91</value>
+  </data>
+  <data name="button_watchdog.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_watchdog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 35</value>
+  </data>
+  <data name="button_watchdog.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="button_watchdog.Text" xml:space="preserve">
+    <value>watchdog</value>
+  </data>
+  <data name="button_IRCALRESTORE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_IRCALRESTORE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 27</value>
+  </data>
+  <data name="button_IRCALRESTORE.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_IRCALRESTORE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 27</value>
+  </data>
+  <data name="button_IRCALRESTORE.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="button_IRCALRESTORE.Text" xml:space="preserve">
+    <value>重置校準</value>
+  </data>
+  <data name="button_fwVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_fwVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 91</value>
+  </data>
+  <data name="button_fwVersion.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_fwVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="button_fwVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button_fwVersion.Text" xml:space="preserve">
+    <value>固件版本</value>
+  </data>
+  <data name="textBox_calval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 28</value>
+  </data>
+  <data name="textBox_calval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 26</value>
+  </data>
+  <data name="textBox_calval.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button_IRCAL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_IRCAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 27</value>
+  </data>
+  <data name="button_IRCAL.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_IRCAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 27</value>
+  </data>
+  <data name="button_IRCAL.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button_IRCAL.Text" xml:space="preserve">
+    <value>校準IR</value>
+  </data>
+  <data name="btn_setirAdjustDistance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="btn_setirAdjustDistance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 62</value>
+  </data>
+  <data name="btn_setirAdjustDistance.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btn_setirAdjustDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 27</value>
+  </data>
+  <data name="btn_setirAdjustDistance.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btn_setirAdjustDistance.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="textBox_irarg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 62</value>
+  </data>
+  <data name="textBox_irarg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 26</value>
+  </data>
+  <data name="textBox_irarg.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btn_getirArg.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="btn_getirArg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 62</value>
+  </data>
+  <data name="btn_getirArg.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btn_getirArg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 27</value>
+  </data>
+  <data name="btn_getirArg.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_getirArg.Text" xml:space="preserve">
+    <value>Get</value>
+  </data>
+  <data name="button_IR_value.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_IR_value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 56</value>
+  </data>
+  <data name="button_IR_value.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_IR_value.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 29</value>
+  </data>
+  <data name="button_IR_value.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button_IR_value.Text" xml:space="preserve">
+    <value>IR Value</value>
+  </data>
+  <data name="btn_reboot.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="btn_reboot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 56</value>
+  </data>
+  <data name="btn_reboot.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="btn_reboot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="btn_reboot.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_reboot.Text" xml:space="preserve">
+    <value>重啟IR</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>DevID:</value>
+  </data>
+  <data name="comboBox_device.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="comboBox_device.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 22</value>
+  </data>
+  <data name="comboBox_device.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="comboBox_device.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>63, 0</value>
+  </data>
+  <data name="comboBox_device.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 30, 2</value>
+  </data>
+  <data name="comboBox_device.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 28</value>
+  </data>
+  <data name="comboBox_device.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_getCANIRDevice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 12pt</value>
+  </data>
+  <data name="button_getCANIRDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 21</value>
+  </data>
+  <data name="button_getCANIRDevice.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="button_getCANIRDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="button_getCANIRDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_getCANIRDevice.Text" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="contextMenuStripClear.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="contextMenuStripClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 28</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripClear.Name" xml:space="preserve">
+    <value>contextMenuStripClear</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripMenuItemClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 24</value>
+  </data>
+  <data name="toolStripMenuItemClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="menuStripMain.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>251, 17</value>
+  </data>
+  <data name="menuStripMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="menuStripMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 28</value>
+  </data>
+  <data name="menuStripMain.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="menuStripMain.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Name" xml:space="preserve">
+    <value>menuStripMain</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStripMain.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 24</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="CHS_ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 24</value>
+  </data>
+  <data name="CHS_ToolStripMenuItem.Text" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="CHT_ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 24</value>
+  </data>
+  <data name="CHT_ToolStripMenuItem.Text" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1376, 790</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>EthCANDemo-LF</value>
+  </data>
+  <data name="&gt;&gt;Line_No_.Name" xml:space="preserve">
+    <value>Line_No_</value>
+  </data>
+  <data name="&gt;&gt;Line_No_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Addr_.Name" xml:space="preserve">
+    <value>Addr_</value>
+  </data>
+  <data name="&gt;&gt;Addr_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IR_Value_.Name" xml:space="preserve">
+    <value>IR_Value_</value>
+  </data>
+  <data name="&gt;&gt;IR_Value_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PageData_.Name" xml:space="preserve">
+    <value>PageData_</value>
+  </data>
+  <data name="&gt;&gt;PageData_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PageNum_.Name" xml:space="preserve">
+    <value>PageNum_</value>
+  </data>
+  <data name="&gt;&gt;PageNum_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemClear.Name" xml:space="preserve">
+    <value>toolStripMenuItemClear</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Name" xml:space="preserve">
+    <value>LanguageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;LanguageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHS_ToolStripMenuItem.Name" xml:space="preserve">
+    <value>CHS_ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;CHS_ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHT_ToolStripMenuItem.Name" xml:space="preserve">
+    <value>CHT_ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;CHT_ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EthCANForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Sunny.UI.UIForm, SunnyUI, Version=3.4.2.0, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb</value>
+  </data>
+</root>

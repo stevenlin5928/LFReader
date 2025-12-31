@@ -1,0 +1,56 @@
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.dll
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.resources
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANDemo.Properties.Resources.resources
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.zh-TW.resources
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.GenerateResource.cache
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.CoreCompileInputs.cache
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.CopyComplete
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe.config
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.pdb
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\zh-TW\EthCANFDDemo.resources.dll
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\zh-TW\EthCANFDDemo.resources.dll
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.exe
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.pdb
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\QT_CanUHFReader.pdb
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csprojAssemblyReference.cache
+J:\harry\stm32\gitRes\IR_CAN\IR_CAN\PC tool\ETHCANFD_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe.config
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.pdb
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\zh-TW\EthCANFDDemo.resources.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.resources
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.zh-TW.resources
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\zh-TW\EthCANFDDemo.resources.dll
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD.66440B2C.Up2Date
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.exe
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.pdb
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\GD32C1\应用软件\GD32C10x_Firmware_Library_V1.2.0\CAN-Reader\PC\ETHCANFD_SDK_Demo-2024-02-06\ETHCANFD_SDK_Demo\bin\Debug\QT_CanUHFReader.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.EthCANForm.zh-TW.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFDDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe.config
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\EthCANFDDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\zh-TW\EthCANFDDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\QT_CanUHFReader.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\zh-TW\EthCANFDDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\EthCANFD.66440B2C.Up2Date

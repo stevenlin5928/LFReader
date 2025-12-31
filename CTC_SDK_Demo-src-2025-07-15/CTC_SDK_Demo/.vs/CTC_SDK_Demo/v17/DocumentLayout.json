@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\ctcform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|solutionrelative:ctcform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|d:\\github\\lfreader\\ctc_sdk_demo-src-2025-07-15\\ctc_sdk_demo\\ctcform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|solutionrelative:ctcform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5196E4B0-A27C-48C9-8263-42C7B46F5DCF}|CTC_SDK_Demo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CTCForm.cs",
+              "DocumentMoniker": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\CTCForm.cs",
+              "RelativeDocumentMoniker": "CTCForm.cs",
+              "ToolTip": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\CTCForm.cs",
+              "RelativeToolTip": "CTCForm.cs",
+              "ViewState": "AgIAACQJAAAAAAAAAADwvygJAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T10:33:57.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T09:58:40.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CTCForm.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\CTCForm.cs",
+              "RelativeDocumentMoniker": "CTCForm.cs",
+              "ToolTip": "D:\\Github\\LFReader\\CTC_SDK_Demo-src-2025-07-15\\CTC_SDK_Demo\\CTCForm.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "CTCForm.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T11:29:15.68Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

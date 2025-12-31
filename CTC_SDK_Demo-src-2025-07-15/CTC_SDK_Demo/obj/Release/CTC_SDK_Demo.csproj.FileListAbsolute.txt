@@ -1,0 +1,38 @@
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.exe.config
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.exe
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\zh-TW\LFR1MDemo.resources.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\C2CSDK.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\FindEthernetCan.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\SunnyUI.Common.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\SunnyUI.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\C2CSDK.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CommandDemo.CTCForm.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTCDemo.Properties.Resources.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CommandDemo.CTCForm.zh-TW.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.GenerateResource.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\zh-TW\LFR1MDemo.resources.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_.315B1D6F.Up2Date
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.exe
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.exe.config
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.exe
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\LFR1MDemo.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\zh-TW\LFR1MDemo.resources.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\C2CSDK.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\FindEthernetCan.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\SunnyUI.Common.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\SunnyUI.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Release\C2CSDK.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.AssemblyReference.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CommandDemo.CTCForm.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTCDemo.Properties.Resources.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CommandDemo.CTCForm.zh-TW.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.GenerateResource.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\zh-TW\LFR1MDemo.resources.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_.315B1D6F.Up2Date
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.exe
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.pdb

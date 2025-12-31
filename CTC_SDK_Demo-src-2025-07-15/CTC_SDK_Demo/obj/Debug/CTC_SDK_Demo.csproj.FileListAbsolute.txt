@@ -1,0 +1,133 @@
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\CTCDemo.exe.config
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\CTCDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\CTCDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\zh-TW\CTCDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\QT_CanUHFReader.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\zh-TW\CTCDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTCDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CTCDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\ETHCANFD_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTCDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTCDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\CTCDemo.exe.config
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\CTCDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\CTCDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\zh-TW\CTCDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\zh-TW\CTCDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\C2C\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\CB01BDemo.exe.config
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\CB01BDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\CB01BDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\bin\Debug\zh-TW\CB01BDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\zh-TW\CB01BDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CB01BDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\CB01B\SDK\CTC_SDK_Demo\obj\Debug\CB01BDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\log4net.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe.config
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\LFR1MDemo.pdb
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\bin\Debug\zh-TW\LFR1MDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\zh-TW\LFR1MDemo.resources.dll
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\LFR1MDemo.exe
+E:\BaiduSyncdisk\work\元氩电子\LFR1M\Code\SDK\CTC_SDK_Demo\obj\Debug\LFR1MDemo.pdb
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe.config
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\LFR1MDemo.pdb
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\zh-TW\LFR1MDemo.resources.dll
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\bin\Debug\log4net.xml
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\zh-TW\LFR1MDemo.resources.dll
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\LFR1MDemo.exe
+E:\BaiduSyncdisk\work\YuanYa\LFR1M\Code\SDK\外发\CTC_SDK_Demo\obj\Debug\LFR1MDemo.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe.config
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\zh-TW\LFR1MDemo.resources.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\zh-TW\LFR1MDemo.resources.dll
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\LFR1MDemo.exe
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\LFR1MDemo.pdb
+C:\Users\steve\OneDrive\2022-元泓科技\Project\Amkor\Andy Projects\Loadport Reader\SW\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\LFR1MDemo.exe.config
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe.config
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.exe
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\LFR1MDemo.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\zh-TW\LFR1MDemo.resources.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\C2CSDK.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\SunnyUI.Common.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\SunnyUI.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\bin\Debug\C2CSDK.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.AssemblyReference.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTCDemo.Properties.Resources.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CommandDemo.CTCForm.zh-TW.resources
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.GenerateResource.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_Demo.csproj.CoreCompileInputs.cache
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\zh-TW\LFR1MDemo.resources.dll
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\CTC_SDK_.315B1D6F.Up2Date
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\LFR1MDemo.exe
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Debug\LFR1MDemo.pdb

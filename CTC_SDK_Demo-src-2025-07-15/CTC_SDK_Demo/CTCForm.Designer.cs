@@ -1071,6 +1071,7 @@
             resources.ApplyResources(this.serialRb, "serialRb");
             this.serialRb.Name = "serialRb";
             this.serialRb.UseVisualStyleBackColor = true;
+            this.serialRb.CheckedChanged += new System.EventHandler(this.serialRb_CheckedChanged_1);
             // 
             // connectBtn
             // 

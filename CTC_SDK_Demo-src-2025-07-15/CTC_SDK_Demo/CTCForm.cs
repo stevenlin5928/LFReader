@@ -114,178 +114,6 @@ namespace CommandDemo
         //防止DataGridView出现滚动条后 UI hang
         private delegate void UpdateDataGridView(DataRow dataRow);
         
-
-        /// <summary>
-        /// 解析封包
-        /// </summary>
-        /// <param name="packetData"></param>
-        private void IRDataprocess()
-        {
-            while (bIrDataProcess)
-            {
-                if (canDataQueque.Count > 0)
-                {
-                    byte[] packetData = canDataQueque.Dequeue();
-                    if (packetData == null)
-                    {
-                        Console.WriteLine("packetData==null");
-                        continue;
-                    }
-                    int dataLength = ((packetData[1]<<8)+ packetData[2])+6;// 包长度
-                    
-                    int cmdcode = packetData[3];
-
-                    switch (cmdcode)
-                    {
-
-                        case (int)0x01:
-                            {
-                                String hw_version = System.Text.Encoding.Default.GetString(packetData, 6, 4);
-                                String fw_version = System.Text.Encoding.Default.GetString(packetData, 14, 4);
-                                UInt16 status =(UInt16) ((packetData[4] << 8) + packetData[5]);
-                                //printLog($"#{addr.ToString("X3")},CAN Reader Version:{version}");
-                                printLog(String.Format("HW version:{0} FW version:{1},Status:0x{2:X}", hw_version, fw_version, status));
-                            }
-                            break;
-                        case (Int32)CTC_CMD_RESP.CTC_CMD_READ_BARCODE:
-                            {
-                                UInt16 status = (UInt16)((packetData[4] << 8) + packetData[5]);
-                                UInt16 barf_len = (UInt16)((packetData[1] << 8) + packetData[2]);
-                                if (status == 0)
-                                {
-                                    //byte[] dst = new byte[barf_len - 2];
-                                    //Array.Copy(packetData, 6, dst, 0, barf_len - 2);
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        uiTextBox_barcode.Text = System.Text.Encoding.Default.GetString(packetData, 6, barf_len - 2);
-                                    }));
-                                }
-
-                            }
-                            break;
-                        case (Int32)CTC_CMD_RESP.CTC_CMD_SET_MOTOR_ACTION:
-                        {
-                                UInt16 status = (UInt16)((packetData[4] << 8) + packetData[5]);
-                                UInt16 mode = (UInt16)(packetData[6]);
-                                if (status == 0)
-                                {
-                                    //byte[] dst = new byte[barf_len - 2];
-                                    //Array.Copy(packetData, 6, dst, 0, barf_len - 2);
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        if(mode==1||mode==2||mode==3)
-                                        {
-                                            printLog(String.Format("电机 {0} 成功", (mode == 1) ? "搬运" : (mode == 2) ? "返回原点" : "搬运->返回原点"));
-                                        }
-                                        else if(mode==4)
-                                        {
-                                            printLog(String.Format("电机停止运行"));
-                                        }
-                                    }));
-                                }
-                                else
-                                {
-                                    //byte[] dst = new byte[barf_len - 2];
-                                    //Array.Copy(packetData, 6, dst, 0, barf_len - 2);
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        printLog(String.Format("电机运行失败，status:{0},mode:{1}",status, mode));
-                                    }));
-                                }
-
-
-                            }
-                        break;
-                        case (Int32)CTC_CMD_RESP.GPIO_GPI_CMD:
-                            {
-                                UInt16 status = (UInt16)((packetData[4] << 8) + packetData[5]);
-                                byte pin_num = packetData[6];
-                                byte level = packetData[7];
-                                byte retport_type = packetData[8];
-
-                                /*0:Unsolicited 主动上报;
-                                1:solicited 被动上报
-                                */
-                                if (retport_type == 1)
-                                {
-
-                                }
-                                else
-                                {
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        switch(pin_num)
-                                        {
-                                            case 1:
-                                                {
-                                                    uiLabel_gpi_in_1.Text = (level == 1) ? "High" : "Low";
-                                                }
-                                                break;
-                                            case 2:
-                                                {
-                                                    uiLabel_gpi_in_2.Text = (level == 1) ? "High" : "Low";
-                                                }
-                                                break;
-                                            case 3:
-                                                {
-                                                    uiLabel_gpi_in_3.Text = (level == 1) ? "High" : "Low";
-                                                }
-                                                break;
-                                            case 4:
-                                                {
-                                                    uiLabel_gpi_in_4.Text = (level == 1) ? "High" : "Low";
-                                                }
-                                                break;
-                                            default:
-                                                {
-                                                    printLog(String.Format("unknown GPI report:{0},PIN_{1},{2}", (retport_type == 0) ? "unsonicited" : "sonicited", pin_num, (level == 1) ? "High" : "Low"));
-                                                }
-                                                break;
-                                        }
-                                    }));
-                                    printLog(String.Format("GPI report:{0},PIN_{1},{2}", (retport_type==0)?"unsonicited":"sonicited", pin_num, (level==1)?"High":"Low"));
-                                }
-                            }
-                            break;
-                        case (Int32)CTC_CMD_RESP.COM_UART_RX_TEST_DATA_CMD:
-                            {
-                                UInt16 status = (UInt16)((packetData[4] << 8) + packetData[5]);
-                                byte uart_num = packetData[6];
-                                int len = (UInt16)((packetData[1] << 8) + packetData[2]);
-
-                                int datalen = len - 3;                               
-                                if (datalen>0)
-                                {
-                                    byte[] data = new byte[datalen];
-                                    string msg = Encoding.UTF8.GetString(packetData,7, datalen);
-                                    printLog(String.Format("COM{0},{1}", uart_num, msg));
-                                }
-                            }
-                            break;
-                        default:
-                            {
-                                String msg = "";
-                                for (int i = 0; i < packetData.Length; i++) 
-                                {
-                                    msg += String.Format("{0:X2} ", packetData[i]);
-                                }
-                                this.Invoke(new Action(() =>
-                                {
-                                    printLog(String.Format("unknown  #{0},message:", msg));
-                                    printLog(String.Format("{0}",msg));
-                                }));
-                            }
-                            break;
-                    }
-                }
-                else
-                {
-                    Thread.Sleep(1);
-                }
-            }
-
-        }
-
         public void TagReport(RFID_EVENT rfidevent, TagData tag, int extra)
         {
             string stamp = DateTime.Now.ToUniversalTime().ToString();
@@ -303,57 +131,6 @@ namespace CommandDemo
                     //
                     int ant = tag.Ant;
                     string ircan_uhf_addr = ((tag.CanAddr & 0x7f) + 1) + "_" + ant;
-#if false
-                    if (!DicCan_uhf_map.ContainsKey(ircan_uhf_addr))
-                    {
-                        uhf_can_tag map = new uhf_can_tag();
-                        map.epclist = new List<string>();
-
-                        map.ant_index = ant;
-                        //map.can_addr = tag.CanAddr;//配置文件决定
-                        map.uhfcan_addr = tag.CanAddr;
-                        map.epclist.Add(tag.Epc);
-
-                        map.lastUpdateTime = DateTime.Now.ToLocalTime();
-                        DicCan_uhf_map.Add(ircan_uhf_addr, map);
-                    }
-                    else
-                    {
-                        uhf_can_tag map = DicCan_uhf_map[ircan_uhf_addr];
-                        if (!map.epclist.Contains(tag.Epc))
-                            map.epclist.Add(tag.Epc);
-                    }
-#endif
-#if false
-                    this.Invoke(new Action(() =>
-                    {
-                        //0x0100
-                        try
-                        {
-                            int ircanaddr = 0;
-                            if (uhfant2IrAddr(tag.CanAddr, tag.Ant, out ircanaddr))
-                            {
-                                int actual_ir_addr_index = ircanaddr - 0x100;
-                                TextBox obj = (TextBox)textbox_control_array[actual_ir_addr_index];
-                                uhf_can_tag map = DicCan_uhf_map[ircan_uhf_addr];
-                                string tag_str = "";
-                                for (int i = 0; i < map.epclist.Count; i++)
-                                {
-                                    tag_str += map.epclist[i];
-                                }
-
-                                obj.Text = tag_str;
-
-                                textbox_control_array[actual_ir_addr_index].BackColor = Color.Green;
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            printLog("配置异常:" + ex.Message);
-                        }
-
-                    }));
-#endif
 
                     break;
                 case RFID_EVENT.RFID_EVENT_INVENTORY_OVER:
@@ -383,798 +160,6 @@ namespace CommandDemo
             }
         }
 
-        /// <summary>
-        /// 组装命令
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-
-        private bool SendCommand(int addr,byte[] data)
-        {
-            byte[] sendData = new byte[8 + 5];//fixed:abyte+4byte addr+ 8 bytes
-
-            sendData[0] = (byte)(data.Length&0xf);
-            sendData[1] = (byte)((addr >> 24) & 0xff);//address
-            sendData[2] = (byte)((addr >> 16) & 0xff);
-            sendData[3] = (byte)((addr >> 8) & 0xff);
-            sendData[4] = (byte)((addr >> 0) & 0xff);
-            Array.Copy(data, 0, sendData, 5, data.Length);
-
-            //sendData[sendData.Length - 1] = Util.Checksum(sendData);
-
-            printLog("【Send   】" + Util.ToHexString(sendData));
-
-            return client.Send(sendData);
-        }
-
-        private bool SendCommandExt(int addr, byte[] data)
-        {
-            byte[] sendData = new byte[8 + 5];//fixed:abyte+4byte addr+ 8 bytes
-
-            sendData[0] = (byte)((data.Length & 0xf)| 0x80) ; //extend frame
-            sendData[1] = (byte)((addr >> 24) & 0xff);//address
-            sendData[2] = (byte)((addr >> 16) & 0xff);
-            sendData[3] = (byte)((addr >> 8) & 0xff);
-            sendData[4] = (byte)((addr >> 0) & 0xff);
-            Array.Copy(data, 0, sendData, 5, data.Length);
-
-            //sendData[sendData.Length - 1] = Util.Checksum(sendData);
-
-            printLog("【Send   】" + Util.ToHexString(sendData));
-
-            return client.Send(sendData);
-        }
-
-        private bool SendCommandExt(int addr, byte[] data, int dataLength)
-        {
-            if (dataLength > 8 || (data.Length < dataLength))
-            {
-                printLog($"#{addr.ToString("X3")} SendCommandExt 数据长度错误!");
-                return false;
-            }
-            byte[] sendData = new byte[8 + 5];//fixed:abyte+4byte addr+ 8 bytes
-            sendData[0] = (byte)((dataLength & 0xf) | 0x80); //extend frame
-            sendData[1] = (byte)((addr >> 24) & 0xff);//address
-            sendData[2] = (byte)((addr >> 16) & 0xff);
-            sendData[3] = (byte)((addr >> 8) & 0xff);
-            sendData[4] = (byte)((addr >> 0) & 0xff);
-            Array.Copy(data, 0, sendData, 5, dataLength);
-
-            //sendData[sendData.Length - 1] = Util.Checksum(sendData);
-
-            printLog("【Send   】" + Util.ToHexString(sendData));
-
-            return client.Send(sendData);
-        }
-
-        private int CreateExtendID(byte srcID, byte dataType, byte param1, byte devID)
-        {
-            return ((srcID & 0xFF) << 21) | (dataType << 12) | ((param1 & 0x0F) << 8) | (devID | 0x80);
-        }
-
-        private int CreateExtendID(byte srcID, byte dataType, byte param1, byte devID,byte reserved)
-        {
-            return ((srcID & 0xFF) << 21) | ((reserved & 0x01) << 20) | (dataType << 12) | ((param1 & 0x0F) << 8) | (devID | 0x80);
-        }
-
-        /// <summary>
-        /// 接收数据包
-        /// </summary>
-#if false
-        private void ReceivePacket()
-        {
-            pcs = new ProducerConsumerStream();
-
-            while (client.IsAlive())
-            {
-
-                byte[] receiveData = client.Receive();             
-                if (receiveData != null)
-                {
-                    //Console.WriteLine(Util.ToHexString(receiveData));
-                    pcs.Write(receiveData, 0, receiveData.Length);
-                }
-
-                //04 00 00 01 5F FF FF FF 02 00 00 00 00
-                if (pcs.DataPosition() < 13)
-                {
-                    Thread.Sleep(50);
-                    continue;
-                }
-
-                MemoryStream innerStream = new MemoryStream();
-
-                byte readBytes = (byte)pcs.ReadByte();
-
-                if ((readBytes & 0xf) > 8)
-                {
-                    printLog("Outer First Packet Header Error,First Header 【" + Convert.ToString(readBytes, 16) + "】");
-                    //SDKLog.Error("{0}Outer First Packet Header Error,First Header {1}", reader.LogHeader, readBytes);
-
-                    //if (CustomTraceListener.HasConsole)
-                    //Util.PrintCustomTrace("First Packet Header Error");
-
-                    innerStream.Close();
-                    continue;
-                }
-                innerStream.WriteByte(readBytes);
-                int packetLen = 12;
-
-                DateTime st = DateTime.Now;
-
-
-                byte[] uart_receivebuffer = new byte[packetLen];
-
-                pcs.Read(uart_receivebuffer, 0, packetLen);
-
-                innerStream.Write(uart_receivebuffer, 0, packetLen);
-
-                byte[] readData = new byte[innerStream.Length];
-                innerStream.Seek(0, SeekOrigin.Begin);
-                innerStream.Read(readData, 0, (int)innerStream.Length);
-
-                innerStream.Close();
-
-                //if (SDKLog.LogEnable("IsDebugEnabled"))
-                //SDKLog.Debug("{0}[Recv] {1}", reader.LogHeader, Util.ToHexString(readData));
-
-                //if (CustomTraceListener.HasConsole)
-                //Util.PrintCustomTrace("[Recv] " + Util.ToHexString(readData));
-                printLog("【Receive】" + Util.ToHexString(readData));
-                ParsePacket(readData);
-
-                pcs.CopyTo();//将数据重新Copy到新的流中
-            }
-            pcs.Close();
-            pcs = null;
-        }
-#endif
-
-/// <summary>
-/// 解析封包
-/// </summary>
-/// <param name="packetData"></param>
-#if false
-        private void ParsePacket(byte[] packetData)
-        {
-            int dataLength = packetData[0] & 0xF;// 包长度
-            int frameType = packetData[0] & 0x80; //帧类型， 0x80:扩展帧；0x00:标准帧
-            if (frameType == 0x00)
-            {
-                int addr = (packetData[1] << 24) | (packetData[2] << 16)
-                    | (packetData[3] << 8) | (packetData[4] << 0);
-                int cmdcode = (packetData[5] << 8) + packetData[6];
-                int hasuhf = 0;
-                int deviceName = (addr & 0x7f) + 1;
-                int irdeviceIndex = addr & 0x7f;
-                switch (cmdcode)
-                {
-                    case 0xFFFF://broadcast device list response
-                        //string deviceId = String.Format("#{0:X}", addr);
-                        string deviceId = String.Format("#{0:X}-{1}", addr, (addr & 0x7f) + 1);
-                        hasuhf = packetData[7] & 0x01;
-                        if (!comboBox_device.Items.Contains(deviceId))
-                        {
-                            this.Invoke(new Action(() =>
-                            {
-                                string uhftip = (hasuhf == 1) ? " Has UHF" : " None ";
-                                printLog(String.Format("#{0},{1},Model:{2}", deviceName, uhftip, dataLength > 3 ? Enum.GetName(typeof(IR_CanProductModel), packetData[8]): "unknown" ));
-                                comboBox_device.Items.Add(deviceId);
-                                comboBox_device.Sorted = true;
-                                if (comboBox_device.Items.Count == 1)
-                                {
-                                    comboBox_device.SelectedIndex = 0;
-                                }
-
-                            }));
-                        }
-                        this.Invoke(new Action(() =>
-                        {
-                            //0x0100
-                            Label obj = (Label)label_control_array[addr & 0x7f];
-                            if (hasuhf == 1)
-                            {
-                                Image img = Image.FromFile(@"uhf.png");
-                                obj.Image = img.Clone() as Image;
-                                obj.Size = img.Size;
-                                img.Dispose();
-                                obj.ForeColor = Color.OrangeRed;
-                            }
-                            else
-                            {
-                                Image img = Image.FromFile(@"status-green.png");
-                                obj.Image = img.Clone() as Image;
-                                obj.Size = img.Size;
-                                img.Dispose();
-                            }
-
-                        }));
-                        break;
-                    case 0x8080:
-                        {
-                            cmdcode = packetData[7];
-
-                            //int deviceName = (addr + 1) & 0xff;
-                            //Console.WriteLine(String.Format("#{0},IR threshhold:{1}", deviceName, ir_threshhold));
-                            switch (cmdcode)//set param
-                            {
-                                case 0x80:
-
-                                    break;
-                                case 0x81:
-                                    {
-                                        UInt16 calval = (UInt16)(packetData[8]);
-                                        UInt16 ir_nPercent = (UInt16)(packetData[10] % 100);
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},IR 校准数据:{1},IR距离参数{2}", deviceName, calval, ir_nPercent));
-                                            textBox_irarg.Text = ir_nPercent.ToString();
-                                            textBox_calval.Text = calval.ToString();
-                                        }));
-                                    }
-
-                                    break;
-                                case 0x82://write calibration data
-                                    {
-                                        UInt16 calval = (UInt16)(packetData[8]);
-                                        UInt16 ir_nPercent = (UInt16)(packetData[10] % 100);
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},IR 校准参数:{1}", deviceName, calval));
-                                            textBox_irarg.Text = ir_nPercent.ToString();
-                                            textBox_calval.Text = calval.ToString();
-                                        }));
-                                    }
-
-                                    break;
-                                case 0x83://write adjust distance data
-                                    {
-                                        UInt16 calval = (UInt16)(packetData[8]);
-                                        UInt16 ir_nPercent = (UInt16)(packetData[10] % 100);
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},IR 距离参数:{1}", deviceName, ir_nPercent));
-                                            textBox_irarg.Text = ir_nPercent.ToString();
-                                            textBox_calval.Text = calval.ToString();
-                                        }));
-                                    }
-
-                                    break;
-                                case 0x85:
-                                    byte min_H = (packetData[8]);
-                                    byte min_M = (packetData[9]);
-                                    byte min_L = (packetData[10]);
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        printLog($"#{deviceName},IR Firmware version:V{min_H}.{min_M}.{min_L},Model:{(dataLength >6 ? Enum.GetName(typeof(IR_CanProductModel), packetData[11]):"unknown")}");
-
-                                    }));
-                                    break;
-                                case 0x86:
-                                    byte status = (packetData[8]);
-
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        printLog(String.Format("#{0},watchdog status:{1}", deviceName, status));
-
-                                    }));
-                                    break;
-                                case 0x89: //get 阈值上下界
-                                    byte thresholdCeiling = (packetData[8]);
-                                    byte thresholdFloor = (packetData[9]);
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        printLog(String.Format("#{0}, get threshold Ceiling:{1},Floor:{2}", deviceName, thresholdCeiling, thresholdFloor));
-                                        textBox_thresholdCeiling.Text = thresholdCeiling.ToString();
-                                        textBox_thresholdFloor.Text = thresholdFloor.ToString();
-
-                                    }));
-                                    break;
-                                case 0x8A: //set 阈值上下界
-                                    byte set_thresholdCeiling = (packetData[8]);
-                                    byte set_thresholdFloor = (packetData[9]);
-
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        printLog(String.Format("#{0}, set threshold Ceiling:{1},Floor:{2}", deviceName, set_thresholdCeiling, set_thresholdFloor));
-
-                                    }));
-                                    break;
-                                case 0xA0: //inventory cmd responce
-                                    {
-                                        byte invStatus = (packetData[8]);
-
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},Inventory status:{1}", deviceName, invStatus));
-
-                                        }));
-                                    }
-                                    break;
-                                case 0xA2: //Set TxPowerLevel responce
-                                    {
-                                        byte powerStatus = (packetData[8]);
-
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},txPowerLevel:{1}", deviceName, powerStatus));
-
-                                        }));
-                                    }
-                                    break;
-                                case 0xA3: //get TxPowerLevel responce
-                                    {
-                                        byte powerStatus = (packetData[8]);
-
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},get txPowerLevel:{1}", deviceName, powerStatus));
-                                            ant1PowerNb.Value = powerStatus;
-
-                                        }));
-                                    }
-                                    break;
-                                case 0xA6: //查看 UHF 是否存在
-                                    {
-                                        string deviceId_t = String.Format("#{0:X}", addr);
-                                        hasuhf = packetData[8];
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            string uhftip = (hasuhf == 1) ? " Has UHF" : " None ";
-                                            printLog(String.Format("#{0},{1}", (addr + 1) & 0xff, uhftip));
-
-                                        }));
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            //0x0100
-                                            Label obj = (Label)label_control_array[addr & 0x7f];
-                                            if (hasuhf == 1)
-                                            {
-                                                Image img = Image.FromFile(@"uhf.png");
-                                                obj.Image = img.Clone() as Image;
-                                                obj.Size = img.Size;
-                                                img.Dispose();
-                                                obj.ForeColor = Color.OrangeRed;
-                                            }
-                                            else
-                                            {
-                                                Image img = Image.FromFile(@"status-green.png");
-                                                obj.Image = img.Clone() as Image;
-                                                obj.Size = img.Size;
-                                                img.Dispose();
-                                            }
-
-                                        }));
-                                        break;
-                                    }
-                                case 0xAD: //set ir trigger (read LF Tag) 
-                                    {
-                                        byte ir_triggerSetting = (packetData[8]);
-
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},IR trigger LF:{1}", deviceName, ir_triggerSetting !=0 ?"Enable":"Disable"));
-                                            comboBox_IRtriggerStatus.SelectedIndex = ir_triggerSetting != 0 ? 0 : 1;
-                                            comboBox_IRtriggerStatus.Enabled = true;
-                                        }));
-                                    }
-                                    break;
-                                case 0xAE: //get ir trigger status(read LF Tag)
-                                    {
-                                        byte ir_triggerSetting = (packetData[8]);
-
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},IR trigger LF:{1}", deviceName, ir_triggerSetting != 0 ? "Enable" : "Disable"));
-                                            comboBox_IRtriggerStatus.SelectedIndex = ir_triggerSetting != 0 ? 0 : 1;
-                                            comboBox_IRtriggerStatus.Enabled = true;
-                                        }));
-                                    }
-                                    break;
-                                case 0x91: //OLED clear screen
-                                    {
-                                        this.Invoke(new Action(() =>
-                                        {
-                                            printLog(String.Format("#{0},Clear OLED Screen!", deviceName));
-                                        }));
-                                    }
-                                    break;
-                                default:
-
-                                    break;
-                            }
-                        }
-
-                        break;
-                    case 0xCCCC://uhf tag
-                        {
-                            //int deviceName = (addr + 1) & 0x7f;
-                            //int irdeviceIndex = addr & 0x7f;
-                            string epcStr = "";
-                            int epcLength = (dataLength - 2);
-                            for (int i = 0; i < epcLength; i++)
-                            {
-                                epcStr += packetData[7 + i].ToString("X2");
-                            }
-                            this.Invoke(new Action(() =>
-                            {
-                                //string stamp = DateTime.Now.ToUniversalTime().ToString();
-                                //string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                                //printLog(String.Format("#{0}-{1} EPC:{2}", deviceName, stamp, epcStr));
-                                printLog(String.Format("#{0} EPC:{2}", deviceName, epcStr));
-                                //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                            }));
-                        }
-                        break;
-                    case 0x6666://uhf tag parted
-                        {
-                            string epcStr = "";
-                            int epcPartLength = (dataLength - 4);
-                            int tag_sn = packetData[7];
-                            int epc_length = ((packetData[8] & 0xF0) >> 3);
-                            int epc_parted_sn = (packetData[8] & 0x0F);
-                            for (int i = 0; i < epcPartLength; i++)
-                            {
-                                epcStr += packetData[9 + i].ToString("X2");
-                            }
-                            //string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                            this.Invoke(new Action(() =>
-                            {
-
-                                //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} EPC part{4}:{5}", deviceName, stamp, tag_sn, epc_length, epc_parted_sn, epcStr));
-                                printLog(String.Format("#{0} SN:{1} EPC Length:{2} EPC part{3}:{4}", deviceName, tag_sn, epc_length, epc_parted_sn, epcStr));
-                                //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                            }));
-                            string tempEpcSrc = TagEPCsegments.CreateEPCSource(addr, tag_sn, epc_length);
-                            if (DictTagEPCsegments.ContainsKey(tempEpcSrc))
-                            {
-                                DictTagEPCsegments[tempEpcSrc].AddepcSegment(addr, tag_sn, epc_length, epcStr, epc_parted_sn);
-
-                                if (DictTagEPCsegments[tempEpcSrc].IsEPCFull)
-                                {
-                                    //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} full EPC:{4}", deviceName, stamp, tag_sn, epc_length, DictTagEPCsegments[tempEpcSrc].GetFullEPC()));
-                                    printLog(String.Format("#{0} SN:{1} EPC Length:{2} full EPC:{3}", deviceName,tag_sn, epc_length, DictTagEPCsegments[tempEpcSrc].GetFullEPC()));
-                                }
-                            }
-                            else
-                            {
-                                TagEPCsegments temptagEPCsegments = new TagEPCsegments(addr, tag_sn, epc_length, epcStr, epc_parted_sn);
-                                DictTagEPCsegments.Add(temptagEPCsegments.EpcSource, temptagEPCsegments);
-                                if (temptagEPCsegments.IsEPCFull)
-                                {
-                                    //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} full EPC:{4}", deviceName, stamp, tag_sn, epc_length, temptagEPCsegments.GetFullEPC()));
-                                    printLog(String.Format("#{0} SN:{1} EPC Length:{2} full EPC:{3}", deviceName,tag_sn, epc_length, temptagEPCsegments.GetFullEPC()));
-                                }
-                            }
-                        }
-                        break;
-                    case 0x7777://uhf tag rssi //20220324 added
-                        {
-                            if (dataLength == 8)
-                            {
-                                int tag_sn = packetData[7];
-                                int epc_length = (packetData[8] * 2); //bytes
-                                byte[] rssi_data = new byte[4] { packetData[9], packetData[10], packetData[11], packetData[12] };
-                                string rssi_str = CalcTagRssi(rssi_data);
-
-                                //string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                                this.Invoke(new Action(() =>
-                                {
-                                    //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} RSSI:{4}", deviceName, stamp, tag_sn, epc_length, rssi_str));
-                                    printLog(String.Format("#{0} SN:{1} EPC Length:{2} RSSI:{3}", deviceName, tag_sn, epc_length, rssi_str));
-                                    //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                                }));
-                                //DictTagEPCsegments.
-                                string tempEpcSrc = TagEPCsegments.CreateEPCSource(addr, tag_sn, epc_length);
-                                if (DictTagEPCsegments.ContainsKey(tempEpcSrc))
-                                {
-                                    DictTagEPCsegments[tempEpcSrc].AddTagRSSI(tempEpcSrc, rssi_str);
-
-                                    if (DictTagEPCsegments[tempEpcSrc].IsEPCFullwithRSSI)
-                                    {
-                                        //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} full EPC:{4} RSSI:{5}",
-                                        //         deviceName, stamp, tag_sn, epc_length,
-                                        //         DictTagEPCsegments[tempEpcSrc].GetFullEPC(),
-                                        //         DictTagEPCsegments[tempEpcSrc].RSSI));
-                                        printLog(String.Format("#{0} SN:{1} EPC Length:{2} full EPC:{3} RSSI:{4}",
-                                                 deviceName, tag_sn, epc_length,
-                                                 DictTagEPCsegments[tempEpcSrc].GetFullEPC(),
-                                                 DictTagEPCsegments[tempEpcSrc].RSSI));
-
-                                    }
-                                }
-                                else
-                                {
-                                    //printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} unknown Tag RSSI{4}", deviceName, stamp, tag_sn, epc_length, rssi_str));
-                                    printLog(String.Format("#{0} SN:{1} EPC Length:{2} unknown Tag RSSI{3}", deviceName,tag_sn, epc_length, rssi_str));
-                                }
-                            }
-                            else
-                            {
-                                this.Invoke(new Action(() =>
-                                {
-                                    //string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                                    //printLog(String.Format("#TAG-RSSI invalid:{0}-{1} lengh:{2}", deviceName, stamp, dataLength));
-                                    printLog(String.Format("#TAG-RSSI invalid:{0} lengh:{1}", deviceName, dataLength));
-                                    //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                                }));
-                            }
-                        }
-                        break;
-                    case 0x6767://uhf tag rssi //20220417 added
-                        {
-                            if (dataLength >= 6)
-                            {
-                                int tag_sn = packetData[7];
-                                int epc_length = (packetData[8] * 2); //bytes
-                                UInt32 rssi_H = packetData[9];
-                                UInt32 rssi_L = packetData[10];
-                                UInt32 rssi_data = ((rssi_H << 8) | (rssi_L));
-                                //Console.WriteLine("rssi:{0:X}", rssi_data);
-                                double rssi_f = rssi_data / 10.0;
-                                string rssi_str = String.Format("-{0:0.0}", rssi_f);
-
-                                string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                                this.Invoke(new Action(() =>
-                                {
-                                    printLog(String.Format("#{0}-{1} SN:{2} EPC Length:{3} RSSI:{4}", deviceName, stamp, tag_sn, epc_length, rssi_str));
-                                    //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                                }));
-                                //DictTagEPCsegments.
-                                string tempEpcSrc = TagEPCsegments.CreateEPCSource(addr, tag_sn, epc_length);
-                                if (DictTagEPCsegments.ContainsKey(tempEpcSrc))
-                                {
-                                    DictTagEPCsegments[tempEpcSrc].AddTagRSSI(tempEpcSrc, rssi_str);
-
-                                    if (DictTagEPCsegments[tempEpcSrc].IsEPCFullwithRSSI)
-                                    {
-                                        printLog(String.Format("#{0}-{1} SN:{2} EPC Len:{3} fullEPC:{4} RSSI:{5}",
-                                                 deviceName, stamp, tag_sn, epc_length,
-                                                 DictTagEPCsegments[tempEpcSrc].GetFullEPC(),
-                                                 DictTagEPCsegments[tempEpcSrc].RSSI));
-                                    }
-                                }
-                                else
-                                {
-                                    printLog(String.Format("#{0}-{1} SN:{2} EPC Len:{3} unknown Tag RSSI{4}", deviceName, stamp, tag_sn, epc_length, rssi_str));
-                                }
-                            }
-                            else
-                            {
-                                this.Invoke(new Action(() =>
-                                {
-                                    string stamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                                    printLog(String.Format("#TAG-RSSI invalid:{0}-{1} lengh:{2}", deviceName, stamp, dataLength));
-                                    //printLog(String.Format("#TAG-{0}:{1:X2}-{2:X2}-{3:X2}-{4:X2}", stamp, packetData[7], packetData[8], packetData[9], packetData[10]));
-                                }));
-                            }
-                        }
-                        break;
-                    case 0xDDDD://get IR status ,inactive
-                        {
-                            Int32 adc = (Int32)(packetData[7] << 8) + packetData[8];
-                            //int  deviceName=(addr + 1) & 0x7f;
-                            //int irdeviceIndex = addr & 0x7f;
-                            if (adc > 0)//关闭
-                            {
-                                DicDevStatus[irdeviceIndex] = 0;
-                            }
-                            else//打开
-                                DicDevStatus[irdeviceIndex] = 1;
-
-                            switch (DicDevStatus[irdeviceIndex])
-                            {
-                                case 0://关闭
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        Label obj_off = (Label)label_control_array[irdeviceIndex];
-                                        Image img_off = Image.FromFile(@"status-black.png");
-                                        obj_off.Image = img_off.Clone() as Image;
-                                        obj_off.Size = img_off.Size;
-                                        img_off.Dispose();
-                                    }));
-                                    break;
-                                case 1://打开
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        Label obj_on = (Label)label_control_array[irdeviceIndex];
-                                        Image img_on = Image.FromFile(@"status-red.png");
-                                        obj_on.Image = img_on.Clone() as Image;
-                                        obj_on.Size = img_on.Size;
-                                        img_on.Dispose();
-                                    }));
-
-                                    break;
-                                default:
-
-                                    break;
-                            }
-
-                            Console.WriteLine(String.Format("#{0},IR:{1}", deviceName, adc));
-                            if (bStartCal)
-                            {
-                                if (caldatalist.Count <= calMax)
-                                    caldatalist.Add(adc);
-                                else
-                                    Console.WriteLine("Have calMax=4 data");
-                            }
-
-                            this.Invoke(new Action(() =>
-                            {
-                                printLog(String.Format("Inactive #{0},IR:{1}", deviceName, adc));
-                            }));
-                        }
-
-                        break;
-                    case 0xDEDE://get IR status,active
-                        {
-                            Int32 adc = (Int32)(packetData[7] << 8) + packetData[8];
-                            //int deviceName = (addr + 1) & 0x7f;
-                            //int irdeviceIndex = addr & 0x7f;
-                            if (adc > 0)//关闭
-                            {
-                                DicDevStatus[irdeviceIndex] = 0;
-                            }
-                            else//打开
-                                DicDevStatus[irdeviceIndex] = 1;
-
-                            switch (DicDevStatus[irdeviceIndex])
-                            {
-                                case 0://关闭
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        Label obj_off = (Label)label_control_array[irdeviceIndex];
-                                        Image img_off = Image.FromFile(@"status-black.png");
-                                        obj_off.Image = img_off.Clone() as Image;
-                                        obj_off.Size = img_off.Size;
-                                        img_off.Dispose();
-                                    }));
-                                    break;
-                                case 1://打开
-                                    this.Invoke(new Action(() =>
-                                    {
-                                        Label obj_on = (Label)label_control_array[irdeviceIndex];
-                                        Image img_on = Image.FromFile(@"status-red.png");
-                                        obj_on.Image = img_on.Clone() as Image;
-                                        obj_on.Size = img_on.Size;
-                                        img_on.Dispose();
-                                    }));
-
-                                    break;
-                                default:
-
-                                    break;
-                            }
-
-                            Console.WriteLine(String.Format("#{0},IR:{1}", deviceName, adc));
-                            if (bStartCal)
-                            {
-                                if (caldatalist.Count <= calMax)
-                                    caldatalist.Add(adc);
-                                else
-                                    Console.WriteLine("Have calMax=4 data");
-                            }
-
-                            this.Invoke(new Action(() =>
-                            {
-                                printLog(String.Format("Active #{0},IR:{1}", deviceName, adc));
-                            }));
-                        }
-
-                        break;
-                    case 0xEEEE://Error code
-                        {
-                            //int deviceName = (addr + 1) & 0x7f;
-                            int errcode = (Int32)(packetData[7] << 8) + packetData[8]; ;
-                            Console.WriteLine(String.Format("Err #{0},IR:{1:X}", deviceName, errcode));
-
-                            this.Invoke(new Action(() =>
-                            {
-                                if (errcode == 0xff02)
-                                {
-                                    Label obj = (Label)label_control_array[addr & 0x7f];
-                                    Image img = Image.FromFile(@"status-yellow.png");
-                                    obj.Image = img.Clone() as Image;
-                                    obj.Size = img.Size;
-                                    img.Dispose();
-                                    printLog(String.Format("Err #{0},IR:{1:X}", deviceName, errcode));
-                                }
-                                else if (errcode == 0xff10)//watchdog reset
-                                {
-                                    Label obj = (Label)label_control_array[addr & 0x7f];
-                                    Image img = Image.FromFile(@"status-yellow.png");
-                                    obj.Image = img.Clone() as Image;
-                                    obj.Size = img.Size;
-                                    img.Dispose();
-                                    printLog(String.Format("Err watchdog reset {0},IR:{1:X}", deviceName, errcode));
-                                }
-                            }));
-                        }
-                        break;
-                    case 0x80://读数据
-
-                        crossThreadUpdateUI updateUI = delegate ()
-                        {
-
-                        };
-                        this.connectBtn.Invoke(updateUI);
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else  //扩展帧
-            {
-                int extAddr = (packetData[1] << 24) | (packetData[2] << 16)
-                            | (packetData[3] << 8) | (packetData[4] << 0);
-                int cmdcode = (extAddr >>12) & 0xFF;
-                int param1 = (extAddr >> 8) & 0xF;
-                int param2 = extAddr & 0xFF;
-                int deviceName = ((extAddr>>21) & 0x7f) + 1;
-                int irdeviceIndex = (extAddr >> 21) & 0x7f;
-                byte[] dataLoad = new byte[dataLength];
-                Array.Copy(packetData, 5, dataLoad, 0, dataLength);
-                string hexdata;
-                string tmp_LF_result = "";
-                switch (cmdcode)
-                {                 
-                    case ExtendIDConst.LF_DT_PAGE_DATA:
-                        LF_SuccessTimes++;
-                        hexdata = Util.ToHexString(dataLoad);
-                        tmp_LF_result = $"#{deviceName},page{param2}:{hexdata}";
-                        this.Invoke(new Action(() => { this.textBox_rwData.Text = hexdata; }));
-                        printLog(tmp_LF_result);
-                        LF_readResult = tmp_LF_result;
-                        bReadLFPageSuccess = true;
-                        LF_RW_Ret_Done.Set();
-                        //Console.Beep(100, 50);
-                        break;
-                    case ExtendIDConst.LF_DT_IR_EVENT:
-                        printLog($"#{deviceName},IR event {(param2 == ExtendIDConst.LF_P2_IR_EVENT_ARRIVE ? "arrive" : "leave")}");
-                        break;
-                    case ExtendIDConst.LF_DT_READ_NONE:
-                        tmp_LF_result = $"#{deviceName},read none!";
-                        printLog(tmp_LF_result);
-                        LF_readResult = tmp_LF_result;
-                        bReadLFPageSuccess = false;
-                        LF_RW_Ret_Done.Set();
-                        break;
-                    case ExtendIDConst.LF_DT_CRC_ERR:
-                        string param1_desp = ""; 
-                        switch (param1)
-                        {
-                            case ExtendIDConst.LF_P1_PAGE_CRC:
-                                param1_desp = "page CRC";
-                                break;
-                            case ExtendIDConst.LF_P1_FRAME_CRC:
-                                param1_desp = "frame CRC";
-                                break;
-                            case ExtendIDConst.LF_P1_HEAD_ERR:
-                                param1_desp = "head";
-                                break;
-                            default:
-                                param1_desp = "unknown";
-                                break;
-                        }
-                        tmp_LF_result = $"#{deviceName},{param1_desp} ERR!";
-                        printLog(tmp_LF_result);
-                        LF_readResult = tmp_LF_result;
-                        bReadLFPageSuccess = false;
-                        LF_RW_Ret_Done.Set();
-                        break;
-                    case ExtendIDConst.LF_DT_WRITE:
-                        printLog($"#{deviceName},write LF {(param2 == ExtendIDConst.LF_P2_WRITE_PAGE_OVER ? "OVER" : "param ERR")}");
-                        break;
-                    case ExtendIDConst.OLED_DT_WRITE_LINE:
-                        printLog($"#{deviceName},OLED display Line {(param2 == ExtendIDConst.OLED_P2_WRITE_LINE_OVER ? "OVER" : "param ERR")}");
-                        break;
-                    default:
-                        printLog($"#{deviceName},{cmdcode:X} unhandled!");
-                        break;
-                }
-            }
-        }
-#endif
         public CTCForm()
         {
             InitializeComponent();
@@ -1213,7 +198,8 @@ namespace CommandDemo
             this.FormBorderStyle = FormBorderStyle.Sizable;
             //comboBox_IRtriggerStatus.SelectedIndex = 0; //启用
             this.comboBox_UART_Baudrate.SelectedIndex = 6; //115200
-            serialCb.Enabled = serialRb.Checked;
+            
+            serialCb.Enabled = true;
             comboBox_UART_Baudrate.Enabled = serialRb.Checked;
             comboBox_ip.Enabled = !serialRb.Checked;
             button_scan.Enabled = !serialRb.Checked;
@@ -1248,42 +234,11 @@ namespace CommandDemo
             //DataGridView 双缓冲设置，防止闪烁
             Setlanguage("Zh-CN");
 
-            //语言设置
-            //if (IsChineseTW())
-            //{
-            //    Setlanguage("Zh-TW");
-            //}
-            //else if (IsChineseSimple())
-            //{
-            //    Setlanguage("zh-CN");
-            //}
-            //else if (IsEnglish())
-            //{
-            //    Setlanguage("Zh-TW");
-            //}
-            //else //default
-            //{
-            //    Setlanguage("Zh-CN");
-            //}
+
             this.Text = $"LFR1M SDK Ver{Get_SDK_Version()}- APP Version 20251229.00";
             
 
-            //Type type2 = dataGridViewIRDevList.GetType();
-            //PropertyInfo pi2 = type.GetProperty("DoubleBuffered",
-            //    BindingFlags.Instance | BindingFlags.NonPublic);
-            //pi2.SetValue(dataGridViewIRDevList, true, null);
-            //dataGridViewIRDevList.AutoGenerateColumns = false;
 
-            //bIrDataProcess = true;
-            //Thread ir_process_thread = new Thread(IRDataprocess);
-            //ir_process_thread.IsBackground = true;
-            //ir_process_thread.Start();
-
-            //btagQThreadExit = false;
-            //tagQThread = new Thread(new ThreadStart(tagQ_process));
-            //tagQThread.Start();
-            //uiComboBox_filter_bank.SelectedIndex = 0;
-            //uiComboBox_lf_select.SelectedIndex = 0;
             uiComboBox_barcode_mode.SelectedIndex = 1;
             uiComboBox_lf_page_start.SelectedIndex = 0;
 
@@ -1385,141 +340,10 @@ namespace CommandDemo
             //FindEthernetCan.FindEthernetCan.StopDiscovery();
         }
 
-/// <summary>
-/// 收到LF TAG 信息，更新OLED显示
-/// </summary>
-/// <param name="i"></param>
-#if false
-        private void UpdateOLEDShow4Tag(object i)
-        {
-            LFTag lfTag = (LFTag)i;
-            List<DisplayInfo> disInfoList = new List<DisplayInfo>();
-            Result_t result = Result_t.OK;
-            //int device_code = lfTag.IrDevAddr + 1;
-            int addr = lfTag.IrDevAddr + 0x100;
-            switch (lfTag.LF_Event)
-            {
-                case LF_EVENT.LF_EVENT_READ_OK:
-                    if (bEN_OLED_ACTION)
-                    {
-                        result = irdevice.OLED_ClearScreen((ushort)(lfTag.IrDevAddr + 0x100));
-                        if (result == Result_t.OK)
-                        {
-                            printLog($"#{addr.ToString("X3")},OLED Clear Screen OVER");
-                        }
-                        else
-                        {
-                            printLog(String.Format("#{0},OLED Clear Screen Fail :{1}", addr.ToString("X3"), result));
-                        }
-                        disInfoList.Add(new DisplayInfo(1, "ABP08P1828931.01.01"));
-                        disInfoList.Add(new DisplayInfo(2, "WFR INSPECION 5 FOR WLCSP"));
-                        disInfoList.Add(new DisplayInfo(3, "C3BU_1" + Encoding.ASCII.GetString(Util.ToHexByte(lfTag.PageHexData))));
-                        result = irdevice.Set_Display_Info(lfTag.IrDevAddr, disInfoList);
-                        if (result == Result_t.OK)
-                        {
-                            printLog($"#{addr.ToString("X3")},OLED Display_Info OVER");
-                        }
-                        else
-                        {
-                            printLog(String.Format("#{0},OLED Display_Info Fail :{1}", addr.ToString("X3"), result));
-                        }
-                    }
-                    break;
-                case LF_EVENT.LF_EVENT_READ_NONE:
-                case LF_EVENT.LF_EVENT_PAGE_CRC_ERR:
-                case LF_EVENT.LF_EVENT_FRAME_CRC_ERR:
-                case LF_EVENT.LF_EVENT_HEAD_ERR:
-                    if (bEN_OLED_ACTION)
-                    {
-                        result = irdevice.OLED_ClearScreen((ushort)(lfTag.IrDevAddr + 0x100));
-                        //device_code = lfTag.IrDevAddr + 1;
-                        if (result == Result_t.OK)
-                        {
-                            printLog($"#{addr.ToString("X3")},OLED Clear Screen OVER");
-                        }
-                        else
-                        {
-                            printLog(String.Format("#{0},OLED Clear Screen Fail :{1}", addr.ToString("X3"), result));
-                        }
-                        disInfoList.Add(new DisplayInfo(1, "Read None!"));
-                        result = irdevice.Set_Display_Info(lfTag.IrDevAddr, disInfoList);
-                        if (result == Result_t.OK)
-                        {
-                            printLog($"#{addr.ToString("X3")},OLED Display_Info OVER");
-                        }
-                        else
-                        {
-                            printLog(String.Format("#{0},OLED Display_Info Fail :{1}", addr.ToString("X3"), result));
-                        }
-                    }
-                    break;
-            }
-        }
 
-        /// <summary>
-        /// IR 感应到 目标离开
-        /// </summary>
-        /// <param name="i"></param>
-        private void UpdateOLEDShow4IR(object i)
-        {
-            int irdeviceIndex = (int)i;
-            List<DisplayInfo> disInfoList = new List<DisplayInfo>();
-            Result_t result = Result_t.OK;
-            //int device_code = irdeviceIndex + 1;
-            UInt16 addr = (ushort)(irdeviceIndex + 0x100); 
-
-            result = irdevice.OLED_ClearScreen((ushort)(irdeviceIndex + 0x100));
-            
-            if (result == Result_t.OK)
-            {
-                printLog($"#{addr.ToString("X3")},OLED Clear Screen OVER");
-            }
-            else
-            {
-                printLog(String.Format("#{0},OLED Clear Screen Fail :{1}", addr.ToString("X3"), result));
-            }
-            disInfoList.Add(new DisplayInfo(1, "NO FOUP!"));
-            result = irdevice.Set_Display_Info((ushort)irdeviceIndex, disInfoList);
-            if (result == Result_t.OK)
-            {
-                printLog($"#{addr.ToString("X3")},OLED Display_Info OVER");
-            }
-            else
-            {
-                printLog(String.Format("#{0},OLED Display_Info Fail :{1}", addr.ToString("X3"), result));
-            }         
-        }
-
-        /// <summary>
-        /// IR 触发读取 LF Tag
-        /// </summary>
-        /// <param name="i"></param>
-        private void ReadLFTag4IRTrigger(object i)
-        {
-            int addr  = (int)i;
-            Result_t result = Result_t.OK;
-            lock (ir_trigger_lock)
-            {
-                Thread.Sleep(300);
-                result = irdevice.LF_ReadTag((ushort)addr, pageNum);
-                Thread.Sleep(200);
-            }
-        }
-#endif
         private void disconnectBtn_Click(object sender, EventArgs e)
         {
-#if false
-            if (client != null)
-            {
 
-                Thread.Sleep(200);
-                //最后关闭连接
-                client.DisConnect();
-            }
-            this.connectBtn.Enabled = true;
-            this.disconnectBtn.Enabled = false;
-            this.mainPanel.Enabled = false;
-#else
             //最后关闭连接
             if (irdevice != null)
             {
@@ -1532,7 +356,7 @@ namespace CommandDemo
             this.disconnectBtn.Enabled = false;
             this.mainPanel.Enabled = false;
             bConnecteStatus = false;
-#endif
+
         }
 
         /// <summary>
@@ -1754,56 +578,7 @@ namespace CommandDemo
             data[6] = time;
             SendCommand(0x0789, data);
 #else
-            //String selDev = "";
-            //UInt16 addr = 0;
-            //if (comboBox_device.SelectedIndex == -1)
-            //{
-            //    MessageBox.Show("请选择设备!");
-            //    return;
-            //}
-            //selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-            ////DictTagEPCsegments.Clear(); //开始新的盘点前，先清除DictTagEPCsegments中的数据
-            //byte ant = Convert.ToByte(textBox_ant.Text);
-            //byte time = byte.Parse(textBox_invtine.Text);
-
-            //addr = Convert.ToUInt16(selDev, 16);
-
-            //int hasuhf = 0;
-            //int device_code = (addr & 0x7f) + 1;
-            //Result_t result = irdevice.RFID_Check(addr, out hasuhf);
-            //if (result == Result_t.OK)
-            //{
-            //    if (hasuhf == 0)
-            //    {
-            //        printLog(string.Format("编号{0}，UHF模块不存在", device_code));
-            //        return;
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine(string.Format("检查UHF设备异常，{0}", result));
-            //    return;
-            //}
-            //result = irdevice.RFID_Inventory(addr, ant, time);
-
-            //button_inv.Enabled = false;
-            //if (result == Result_t.OK)
-            //{
-            //    printLog(String.Format("#{0},盘点中...", device_code));
-            //}
-            //else if (result == Result_t.ERR_UHF_NOT_EXIST)
-            //{
-            //    printLog(String.Format("#{0},UHF 不存在", device_code));
-            //}
-            //else if (result == Result_t.ERR_UHF_INVENTORY_ING)
-            //{
-            //    printLog(String.Format("#{0},UHF 已经在盘点", device_code));
-            //}
-            //else
-            //{
-            //    printLog(String.Format("#{0},盘点启动异常,{1}", device_code, result));
-            //}
-            //button_inv.Enabled = true;
+            
 #endif
         }
 
@@ -1889,29 +664,7 @@ namespace CommandDemo
             data[5] = (byte)antPower;
             SendCommand(0x0789, data);
 #else
-            //int antPower = (int)ant1PowerNb.Value;
-
-            //String selDev = "";
-            //UInt16 addr = 0;
-            //if (comboBox_device.SelectedIndex == -1)
-            //{
-            //    MessageBox.Show("请选择设备!");
-            //    return;
-            //}
-            //setAntPowerBtn.Enabled = false;
-            //selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-            //addr = Convert.ToUInt16(selDev, 16);
-            //Result_t result = irdevice.RFID_Set_Tx_power(addr, antPower);
-            //int device_code = (addr & 0x7f) + 1;
-            //if (result == Result_t.OK)
-            //{
-            //    printLog(String.Format("#{0},设置功率成功:{1}", device_code, antPower));
-            //}
-            //else
-            //{
-            //    printLog(String.Format("#{0},设置功率失败 :{1}", device_code, result));
-            //}
-            //setAntPowerBtn.Enabled = true;
+            
 #endif
         }
 
@@ -1932,30 +685,7 @@ namespace CommandDemo
             data[3] = (byte)((addr >> 0) & 0xff);
             SendCommand(0x0789, data);
 #else
-            //String selDev = "";
-            //UInt16 addr = 0;
-            //if (comboBox_device.SelectedIndex == -1)
-            //{
-            //    MessageBox.Show("请选择设备!");
-            //    return;
-            //}
-            //getAntPowerBtn.Enabled = false;
-            //selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-            //addr = Convert.ToUInt16(selDev, 16);
-            //byte txpower = 0;
-            //Result_t result = irdevice.RFID_Get_Tx_power(addr, out txpower);
-            //int device_code = (addr & 0x7f) + 1;
-
-            //if (result == Result_t.OK)
-            //{
-            //    printLog(String.Format("#{0},获取功率成功:{1}", device_code, txpower));
-            //    ant1PowerNb.Value = txpower;
-            //}
-            //else
-            //{
-            //    printLog(String.Format("#{0},获取功率失败 :{1}", device_code, result));
-            //}
-            //getAntPowerBtn.Enabled = true;
+            
 #endif
         }
 
@@ -2017,141 +747,10 @@ namespace CommandDemo
             data[4] = 0xA6; // 查询UHF 是否存在
             SendCommand(0x0789, data);
 #else
-            //String selDev = "";
-            //UInt16 addr = 0;
-
-            //if (comboBox_device.SelectedIndex == -1)
-            //{
-            //    MessageBox.Show("请选择设备!");
-            //    return;
-            //}
-            //button_uhfCheck.Enabled = false;
-            //int hasuhf = 0;
-            //Result_t result = Result_t.ERR_FAILED;
-            //int device_code = 0;
-            //selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-
-            //addr = Convert.ToUInt16(selDev, 16);
-
-            //result = irdevice.RFID_Check(addr, out hasuhf); ;
-            //device_code = (addr & 0x7f) + 1;
-            //if (result == Result_t.OK)
-            //{
-            //    string deviceId_t = String.Format("#{0:X}", addr);
-            //    this.Invoke(new Action(() =>
-            //    {
-            //        string uhftip = (hasuhf == 1) ? " Has UHF" : " None UHF";
-            //        printLog(String.Format("#{0},{1}", (addr + 1) & 0xff, uhftip));
-
-            //    }));
-            //    //this.Invoke(new Action(() =>
-            //    //{
-            //    //    //0x0100
-            //    //    Label obj = (Label)label_control_array[addr & 0x7f];
-            //    //    if (hasuhf == 1)
-            //    //    {
-            //    //        Image img = Image.FromFile(@"uhf.png");
-            //    //        obj.Image = img.Clone() as Image;
-            //    //        obj.Size = img.Size;
-            //    //        img.Dispose();
-            //    //        obj.ForeColor = Color.OrangeRed;
-            //    //    }
-            //    //    else
-            //    //    {
-            //    //        Image img = Image.FromFile(@"status-green.png");
-            //    //        obj.Image = img.Clone() as Image;
-            //    //        obj.Size = img.Size;
-            //    //        img.Dispose();
-            //    //    }
-
-            //    //}));
-            //}
-            //else
-            //{
-            //    printLog(String.Format("#{0},检查UHF失败 :{1}", device_code, result));
-            //}
-
-            //button_uhfCheck.Enabled = true;
+            
 #endif
         }
 
-        static void SaveLog2File(string text)
-        {
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SaveLog");//生成目录路径
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);//创建目录
-            }
-            string str2 = Path.Combine(path, "LF-" + DateTime.Today.ToString("yyyy-MM-dd") + ".txt");//生成文件路径           
-            try
-            {
-                using (StreamWriter writer = File.AppendText(str2))
-                {
-                    writer.Write(text);
-                    writer.Flush();
-                    writer.Close();
-                }
-            }
-            catch (IOException)
-            {
-            }
-        }
-
-        private void toolStripMenuItemClear_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show(sender.ToString());
-            this.uicommandListBox.Items.Clear();
-        }
-
-#if false
-        private void button_getIRtrigger_Click(object sender, EventArgs e)
-        {
-            String selDev = "";
-            UInt16 addr = 0;
-            if (comboBox_device.SelectedIndex == -1)
-            {
-                MessageBox.Show("Please select a device!");
-                return;
-            }
-            selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-            addr = Convert.ToUInt16(selDev, 16);
-            Result_t result = irdevice.LF_GetIrTrigger(addr, out bool irTriggerLF);
-            //int device_code = (addr & 0x7f) + 1;
-            if (result == Result_t.OK)
-            {
-                comboBox_searchMode.SelectedIndex = irTriggerLF == true ? 0 : 1;
-                comboBox_searchMode.Enabled = true;
-                printLog(String.Format("#{0},Get LF IR trigger:{1}", addr.ToString("X3"), irTriggerLF));
-            }
-            else
-            {
-                printLog(String.Format("#{0},Get LF IR trigger Fail :{1}", addr.ToString("X3"), result));
-            }
-        }
-
-        private void button_setIRtrigger_Click(object sender, EventArgs e)
-        {
-            String selDev = "";
-            UInt16 addr = 0;
-            if (comboBox_device.SelectedIndex == -1)
-            {
-                MessageBox.Show("Please select a device!");
-                return;
-            }
-            selDev = comboBox_device.Text.Trim('#').Split('-')[0];
-            addr = Convert.ToUInt16(selDev, 16);
-            Result_t result = irdevice.LF_SetIrTrigger(addr, comboBox_searchMode.SelectedIndex == 0 ? true : false);
-            //int device_code = (addr & 0x7f) + 1;
-            if (result == Result_t.OK)
-            {
-                printLog(String.Format("#{0},LF IR trigger setting OK", addr.ToString("X3")));
-            }
-            else
-            {
-                printLog(String.Format("#{0},LF IR trigger setting Fail :{1}", addr.ToString("X3"), result));
-            }
-        }
-#endif
         private void commandListBox_DrawItem(object sender, DrawItemEventArgs e)
         {
 #if false
@@ -2249,26 +848,6 @@ namespace CommandDemo
         }
 
 
-
-
-        //当前操作系统是否为简体中文
-        public static bool IsChineseSimple()
-        {
-            return Thread.CurrentThread.CurrentCulture.Name == "zh-CN";
-        }
-
-        //当前操作系统是否为繁体中文
-        public static bool IsChineseTW()
-        {
-            return Thread.CurrentThread.CurrentCulture.Name == "Zh-TW";
-        }
-
-        //当前操作系统是否为英语（美国）
-        public static bool IsEnglish()
-        {
-            return Thread.CurrentThread.CurrentCulture.Name == "en-US";
-        }
-
         /// <summary>
         /// 设定APP 语言
         /// </summary>
@@ -2283,58 +862,6 @@ namespace CommandDemo
         }
 
 
-        private void tagQ_process()
-        {
-            while (btagQThreadExit == false)
-            {
-                if (tagDataQ.Count > 0)
-                {
-                    TagData tagdata;
-                    //string hexdata;
-                    lock (tagDataQ)
-                    {
-                        tagdata = tagDataQ.Dequeue();
-                    }
-                    getTagsCount++;
-#if true
-                    this.Invoke(new Action(() =>
-                    {
-                        //this.uiTextBox_rwData.Text = !uiCheckBox_rwTextHex.Checked ? Encoding.ASCII.GetString(Util.ToHexByte(hexdata)) : hexdata;
-                        DataRow[] dataRows = tagdataTable.Select($"EPC = '{(this.bEPC_ASCII ? Encoding.ASCII.GetString(Util.ToHexByte(tagdata.Epc)) : tagdata.Epc)}' AND Addr = '{tagdata.CanAddr.ToString("X3")}'");
-                        if (dataRows.Length > 0)
-                        {
-                            dataRows[0]["EPC"] = this.bEPC_ASCII ? Encoding.ASCII.GetString(Util.ToHexByte(tagdata.Epc)) : tagdata.Epc;
-                            dataRows[0]["Count"] = (int)dataRows[0]["Count"]+1;
-                            dataRows[0]["UpdateTime"] = DateTime.Now.ToString("yy-MM-dd HH:mm:ss.fff");
-                            dataRows[0]["IP"] = tagdata.Ip;//
-                        }
-                        else
-                        {
-                            DataRow dataRow = tagdataTable.NewRow();
-                            dataRow["Addr"] = tagdata.CanAddr.ToString("X3");
-                            dataRow["Line No."] = tagdataTable.Rows.Count+1;
-                            dataRow["Count"] = 1;
-                            dataRow["TAG_SN"] = tagdata.Tag_sn;//tagdata.Tag_sn.ToString();          
-                            dataRow["EPC"] = this.bEPC_ASCII ? Encoding.ASCII.GetString(Util.ToHexByte(tagdata.Epc)) : tagdata.Epc;
-                            dataRow["UpdateTime"] = DateTime.Now.ToString("yy-MM-dd HH:mm:ss.fff");
-                            dataRow["IP"] = tagdata.Ip;//
-                            //Console.WriteLine($"ip:{tagdata.Ip}");
-                            tagdataTable.Rows.Add(dataRow);  //必须在Invoke里，否则dataGridViewIRDevList出现滚动条后，UI容易hang
-                            //uiDataGridView_IRDevList.DataSource = tagdataTable;
-                        }
-                        
-                    }));
-#endif
-                }
-                else
-                {
-                    Thread.Sleep(1);
-                }
-            }
-        }
-
-
-
         private void uiButton_lf_stop_Click(object sender, EventArgs e)
         {
             bLF_TestRunning=false;
@@ -2343,6 +870,7 @@ namespace CommandDemo
         private void uiButton_lf_read_Click(object sender, EventArgs e)
         {
             int index = uiComboBox_lf_select.SelectedIndex;
+            int pageNum = uiComboBox_lf_page_start.SelectedIndex+1;
             Result_t ret = Result_t.ERR_FAILED;
 
             var max_count = uiIntegerUpDown_lf_count.Value;
@@ -2354,6 +882,8 @@ namespace CommandDemo
             uiButton_lf_read.Enabled = false;
             bLF_TestRunning=true;
             uiTextBox_lf_data.Text = "";
+            int _read_loop_count = 0;
+
             Application.DoEvents();
             Task t = new Task(() =>
             {
@@ -2364,16 +894,20 @@ namespace CommandDemo
                 {
                     if(!bLF_TestRunning)
                     {
+                        printLog("Stop Read!");
                         break;
                     }
 
                     for(int p = 0; p < 6; p++)
                     {
-                        ret = irdevice.CTC_Read_LF(index, 1, 1, out lfdada);
+                        _read_loop_count = p + 1;
+                        ret = irdevice.CTC_Read_LF(index, pageNum, 1, out lfdada);
                         if (ret == Result_t.OK)
+                        {
                             break;
+                        }
+                            
 
-                        //Thread.Sleep(10);
                     }
 
                     if (ret == Result_t.OK)
@@ -2392,7 +926,7 @@ namespace CommandDemo
                                             
                         }));
 
-                        printLog(String.Format("read lf lfdada:{0}", lfdada));
+                        printLog($"{lfdada}--{_read_loop_count}");
                         Console.Beep();
                     }
                     else
@@ -2400,10 +934,10 @@ namespace CommandDemo
                         printLog(String.Format("read LF failed，ERROR,{0}", ret));
                         failed_count++;
                     }
-                    Thread.Sleep(20);
+                    Thread.Sleep(5);
                     this.Invoke(new Action(() =>
                     {
-                        uiLabel_succ_count.Text = succ_count.ToString();
+                        uiLabel_succ_count.Text = $"{succ_count}/{i+1}" ;
                     }));
                     Application.DoEvents();
                 }
@@ -2500,7 +1034,7 @@ namespace CommandDemo
             {
                 int value = 0;
                 uiLabel_gpi_in_1.Text = "-----";
-                if (irdevice.gpio_get_gpi(1, out value)==Result_t.OK)
+                if (irdevice.gpio_get_gpi(0, out value)==Result_t.OK)
                 {
                     uiLabel_gpi_in_1.Text = (value==1)?"High":"Low";
                 }
@@ -2513,7 +1047,7 @@ namespace CommandDemo
             {
                 int value = 0;
                 uiLabel_gpi_in_2.Text = "-----";
-                if (irdevice.gpio_get_gpi(2, out value) == Result_t.OK)
+                if (irdevice.gpio_get_gpi(1, out value) == Result_t.OK)
                 {
                     uiLabel_gpi_in_2.Text = (value == 1) ? "High" : "Low"; ;
                 }
@@ -2526,7 +1060,7 @@ namespace CommandDemo
             {
                 int value = 0;
                 uiLabel_gpi_in_3.Text = "-----";
-                if (irdevice.gpio_get_gpi(3, out value) == Result_t.OK)
+                if (irdevice.gpio_get_gpi(2, out value) == Result_t.OK)
                 {
                     uiLabel_gpi_in_3.Text = (value == 1) ? "High" : "Low"; ;
                 }
@@ -2539,7 +1073,7 @@ namespace CommandDemo
             {
                 int value = 0;
                 uiLabel_gpi_in_4.Text = "-----";
-                if (irdevice.gpio_get_gpi(4, out value) == Result_t.OK)
+                if (irdevice.gpio_get_gpi(3, out value) == Result_t.OK)
                 {
                     uiLabel_gpi_in_4.Text = (value == 1) ? "High" : "Low"; ;
                 }
@@ -2874,6 +1408,11 @@ namespace CommandDemo
         private void uiButton_Cls_Click(object sender, EventArgs e)
         {
             uicommandListBox.Items.Clear();
+        }
+
+        private void serialRb_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 

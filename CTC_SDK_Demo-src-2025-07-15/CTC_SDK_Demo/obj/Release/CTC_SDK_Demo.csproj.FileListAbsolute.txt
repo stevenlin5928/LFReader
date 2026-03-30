@@ -36,3 +36,4 @@ D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\zh-TW\LF
 D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\CTC_SDK_.315B1D6F.Up2Date
 D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.exe
 D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.pdb
+D:\Github\LFReader\CTC_SDK_Demo-src-2025-07-15\CTC_SDK_Demo\obj\Release\LFR1MDemo.exe.config
